@@ -2,8 +2,7 @@
 #define __PIE_H__
 
 #include <sstream>
-#include "socket.h"
-
+#include "AsyncSocket.h"
 
 extern unsigned short cp949table[];
 
@@ -24,11 +23,11 @@ typedef struct termchar {
 	int character;	// character (in unicode)
 } termchar;
 
-class terminal
+class PieTerminal
 {
 public:
-	terminal();
-	~terminal(void);
+	PieTerminal();
+	~PieTerminal(void);
 	
 	void connect(const char *host, int port=23);
 	void close();
@@ -46,7 +45,7 @@ private:
 
 	bool terminated;
 	std::stringstream buffer;
-	SOCKET sock;
+	AsyncSocket *sock;
 	int bufferlen;
 	termchar screen[24][80];
 	char cscreen[24][80];

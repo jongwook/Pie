@@ -1,4 +1,4 @@
-#include "terminal.h"
+#include "PieTerminal.h"
 
 //static const char* controlChars[]={"NUL","SOH","STX","ETX","EOT","ENQ","ACK","BEL",
 //	"BS" ,"HT" ,"LF" ,"VT" ,"FF" ,"CR" ,"SO" ,"SI" ,
@@ -7,8 +7,8 @@
 
 #define BETWEEN(x,a,b) ( (x)>=(a) && (x)<=(b) )
 
-terminal::terminal(void) {
-	sock=socket_create();
+PieTerminal::PieTerminal(void) {
+	sock=[[AsyncSocket alloc] init];
 	bufferlen=0;
 	terminated=false;
 	bold=false;
@@ -26,16 +26,17 @@ terminal::terminal(void) {
 }
 
 
-terminal::~terminal(void) {
+PieTerminal::~PieTerminal(void) {
 	if(sock) {
-		socket_close(sock);
+		[sock release];
 	}
 }
 
-void terminal::connect(const char *host, int port) {
+void PieTerminal::connect(const char *host, int port) {
 
 	printf("connecting to %s...\n",host);
-	if(socket_connect(sock,host,port)==-1) 
+//	if(socket_connect(sock,host,port)==-1) 
+	if(![sock connectToHost:[NSString stringWithUTF8String:host] onPort:port error:nil])
 		return;
 
 	// start negotiation
@@ -48,11 +49,11 @@ void terminal::connect(const char *host, int port) {
 	send("\xff\xfd\x03");
 }
 
-void terminal::close() {
-	socket_close(sock);
+void PieTerminal::close() {
+	[sock disconnect];
 }
 
-void terminal::negotiate(const char *token) {
+void PieTerminal::negotiate(const char *token) {
 	switch(token[1]) {
 	case '\xfa':
 		// suboption begin
@@ -89,7 +90,7 @@ void terminal::negotiate(const char *token) {
 	case '\xfd':
 		// do
 		switch(token[2]) {
-		case '\x18':	// terminal type
+		case '\x18':	// PieTerminal type
 			send("\xff\xfd\x18");
 			break;
 		case '\x1f':	// nego win size
@@ -128,10 +129,10 @@ void terminal::negotiate(const char *token) {
 	}
 }
 
-void terminal::update() {
+void PieTerminal::update() {
 	static char buf[512];
-	while(socket_poll(sock)) {
-		int len=socket_receive(sock,buf,512);
+	while(false) {
+		int len=0;//socket_receive(sock,buf,512);
 		if(len==-1) {
 			bufferlen=-1;
 			return;
@@ -141,14 +142,14 @@ void terminal::update() {
 	}
 }
 
-void terminal::idle() {
+void PieTerminal::idle() {
 	while(!terminated) {
 		parse();
 		draw();
 	}
 }
 
-void terminal::draw() {
+void PieTerminal::draw() {
 	system("cls");
 	for(int i=0;i<24;i++) {
 		for(int j=0;j<80;j++) {
@@ -158,7 +159,7 @@ void terminal::draw() {
 	}
 }
 
-void terminal::parse() {
+void PieTerminal::parse() {
 	static char result[256];
 	static int pos=0;
 	char next=getchar();
@@ -274,7 +275,7 @@ void terminal::parse() {
 	drawchar(next);
 }
 
-void terminal::drawchar(int c) {
+void PieTerminal::drawchar(int c) {
 	termchar &s=screen[cursory][cursorx];
 	if(c<0x80) {	// normal ascii string
 		s.bold=bold;
@@ -316,7 +317,7 @@ void terminal::drawchar(int c) {
 	}
 }
 
-void terminal::newline() {
+void PieTerminal::newline() {
 	cursorx=0;
 	if(cursory<23) {
 		cursory++;
@@ -330,7 +331,7 @@ void terminal::newline() {
 	}
 }
 
-char terminal::getchar() {
+char PieTerminal::getchar() {
 	while(bufferlen<=0) update();
 	char result;
 	buffer.get(result);
@@ -338,12 +339,12 @@ char terminal::getchar() {
 	return result;
 }
 
-char terminal::peek() {
+char PieTerminal::peek() {
 	while(bufferlen<=0) update();
 	return buffer.peek();
 }
 
-void terminal::send(const char * data, int len) {
+void PieTerminal::send(const char * data, int len) {
 	if(len==-1) len=strlen(data);
-	socket_send(sock,data,len);
+	//socket_send(sock,data,len);
 }

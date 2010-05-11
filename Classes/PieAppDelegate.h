@@ -7,12 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PieConnection.h"
 
 @class PieViewController;
 
 @interface PieAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
     PieViewController *viewController;
+	PieConnection *pie;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;

@@ -15,8 +15,11 @@
 @synthesize viewController;
 
 
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
-    
+	pie=[[PieConnection alloc] init];
+	[pie connectToHost:@"loco.kaist.ac.kr"];
+	
     // Override point for customization after app launch    
     [window addSubview:viewController.view];
     [window makeKeyAndVisible];
@@ -26,6 +29,7 @@
 
 
 - (void)dealloc {
+	[pie release];
     [viewController release];
     [window release];
     [super dealloc];
