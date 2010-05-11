@@ -7,10 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PieView.h"
 
-@interface PieViewController : UIViewController {
-
+@interface PieViewController : UIViewController<UIScrollViewDelegate,UITextFieldDelegate> {
+	UIScrollView *scrollView;
+	PieView *pieView;
+	UITextField *textField;
 }
-
+@property (nonatomic,retain) IBOutlet UIScrollView *scrollView;
+@property (nonatomic,retain) IBOutlet PieView *pieView;
+@property (nonatomic,retain) IBOutlet UITextField *textField;
 @end
 

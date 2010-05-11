@@ -10,7 +10,7 @@
 
 @implementation PieViewController
 
-
+@synthesize scrollView, pieView, textField;
 
 /*
 // The designated initializer. Override to perform setup that is required before the view is loaded.
@@ -29,13 +29,27 @@
 */
 
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+	
+	
+	scrollView.contentSize=CGSizeMake(640.0,460.0);
+	scrollView.minimumZoomScale=0.5;
+	scrollView.maximumZoomScale=4.0;
+	scrollView.clipsToBounds=YES;
+	scrollView.delegate=self;
+	
+	textField.delegate=self;
+	[textField becomeFirstResponder];
 }
-*/
 
+- (BOOL)textField:(UITextField *)field shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)str {
+	int c=(int)[str characterAtIndex:0];
+	NSLog(@"%@, %d",str,c);
+	return false;
+}
 
 /*
 // Override to allow orientations other than the default portrait orientation.
@@ -52,9 +66,14 @@
 	// Release any cached data, images, etc that aren't in use.
 }
 
+- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {
+	return pieView;
+}
+
 - (void)viewDidUnload {
 	// Release any retained subviews of the main view.
 	// e.g. self.myOutlet = nil;
+	[pieView release];
 }
 
 
