@@ -36,21 +36,41 @@
 	
 	
 	scrollView.contentSize=CGSizeMake(640.0,460.0);
-	scrollView.minimumZoomScale=0.5;
+	scrollView.minimumZoomScale=0.52;
 	scrollView.maximumZoomScale=4.0;
 	scrollView.clipsToBounds=YES;
 	scrollView.delegate=self;
 	
+	scrollView.zoomScale=0.52;	
+	// show keyboard
 	textField.delegate=self;
 	[textField becomeFirstResponder];
+//	[[NSNotificationCenter defaultCenter] addObserver:self
+//											 selector:@selector(handleTextFieldChanged:)
+//												 name:UITextFieldTextDidChangeNotification
+//											   object:textField];
 }
 
 - (BOOL)textField:(UITextField *)field shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)str {
-	int c=(int)[str characterAtIndex:0];
-	NSLog(@"%@, %d",str,c);
-	return false;
+	if(str.length==0) {
+		NSLog(@"Backspace");
+	} else {
+		int c=(int)[str characterAtIndex:0];
+		NSLog(@"%@, %d",str,c);
+	}
+	[field setText:@" "];
+	return NO;
 }
-
+/*
+- (void)handleTextFieldChanged:(NSNotification *)notification {
+	if(textField.text==@"") {
+		NSLog(@"Backspace detected");
+		[textField setText:@" "];
+	} else {
+		NSLog(@"%@",textField.text);
+	}
+}
+*/
 /*
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
