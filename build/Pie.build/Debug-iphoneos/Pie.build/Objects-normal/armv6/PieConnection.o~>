@@ -1,0 +1,5 @@
+/Users/ilikekjw/Documents/XCode/Pie/Classes/PieConnection.mm: In function 'objc_object* -[PieConnection init](PieConnection*, objc_selector*)':
+/Users/ilikekjw/Documents/XCode/Pie/Classes/PieConnection.mm:30: warning: control reaches end of non-void function
+/Users/ilikekjw/Documents/XCode/Pie/Classes/PieConnection.mm: At global scope:
+/Users/ilikekjw/Documents/XCode/Pie/Classes/PieConnection.mm:15: warning: 'token' defined but not used
+/Users/ilikekjw/Documents/XCode/Pie/Classes/PieConnection.mm:16: warning: 'pos' defined but not used

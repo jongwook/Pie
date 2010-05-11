@@ -6,9 +6,28 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
+#include <sstream>
+
 #import "PieConnection.h"
 
+
+static std::stringstream buffer;
+static char token[16]="";
+static int pos=0;
+
 @implementation PieConnection
+
+-(id) init {
+	currentRow=currentCol=0;
+	savedRow=savedCol=0;
+	for(int i=0;i<TERMINAL_ROWS;i++) {
+		for(int j=0;j<TERMINAL_COLS;j++) {
+			screen[i][j]=' ';
+			foreground[i][j]=-1;
+			background[i][j]=-1;
+		}
+	}
+}
 
 -(BOOL) connectToHost:(NSString *)host {
 	return [self connectToHost:host onPort:23];

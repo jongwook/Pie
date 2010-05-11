@@ -10,7 +10,7 @@
 
 @implementation PieViewController
 
-@synthesize scrollView, pieView, textField;
+@synthesize scrollView, pieView, textField, koreanLabel;
 
 /*
 // The designated initializer. Override to perform setup that is required before the view is loaded.
@@ -35,9 +35,9 @@
     [super viewDidLoad];
 	
 	
-	scrollView.contentSize=CGSizeMake(640.0,460.0);
+	scrollView.contentSize=CGSizeMake(pieView.frame.size.width,pieView.frame.size.height);
 	scrollView.minimumZoomScale=0.52;
-	scrollView.maximumZoomScale=4.0;
+	scrollView.maximumZoomScale=1.5;
 	scrollView.clipsToBounds=YES;
 	scrollView.delegate=self;
 	
@@ -45,32 +45,50 @@
 	// show keyboard
 	textField.delegate=self;
 	[textField becomeFirstResponder];
-//	[[NSNotificationCenter defaultCenter] addObserver:self
-//											 selector:@selector(handleTextFieldChanged:)
-//												 name:UITextFieldTextDidChangeNotification
-//											   object:textField];
+	
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleTextFieldChanged:) name:UITextFieldTextDidChangeNotification object:textField];
 }
 
 - (BOOL)textField:(UITextField *)field shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)str {
 	if(str.length==0) {
 		NSLog(@"Backspace");
+		if(field.text.length>1) {
+			return YES;
+		} else {
+			[field setText:@" "];
+		}
 	} else {
 		int c=(int)[str characterAtIndex:0];
-		NSLog(@"%@, %d",str,c);
+		
+		if((c>=0x3130 && c<=0x318F) || (c>=0x1100 && c<=0x11FF) || (c>=0xAC00 && c<=0xD7AF)) {	// korean letters
+			return YES;
+		} else {
+			int k=(field.text.length>0)?[field.text characterAtIndex:0]:0x20;
+			if(k!=0x20) {
+				NSLog(@"Korean Input(1) : %C, %04X", k, (int)k);
+			}
+			[field setText:@" "];
+			NSLog(@"Normal Input : %@, %04X", str,c);
+			[koreanLabel setHidden:YES];
+		}
 	}
-	[field setText:@" "];
 	return NO;
 }
-/*
-- (void)handleTextFieldChanged:(NSNotification *)notification {
-	if(textField.text==@"") {
-		NSLog(@"Backspace detected");
-		[textField setText:@" "];
-	} else {
-		NSLog(@"%@",textField.text);
+
+- (BOOL)handleTextFieldChanged:(NSNotification *)notification {
+//	NSLog(@"Text(%d) : %@",textField.text.length,textField.text);
+	if(textField.text.length>1) {
+		unichar c=[textField.text characterAtIndex:0];
+		if (c!=0x20) {
+			NSLog(@"Korean Input(2) : %C, %04X", c, (int)c);
+		}
+		[textField setText:[textField.text substringFromIndex:1]];
 	}
+	[koreanLabel setHidden:NO];
+	[koreanLabel setText:textField.text];
+	return YES;
 }
-*/
+
 /*
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {

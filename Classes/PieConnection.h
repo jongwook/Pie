@@ -9,9 +9,17 @@
 #import <UIKit/UIKit.h>
 #import "AsyncSocket.h"
 
+#define TERMINAL_ROWS 24
+#define TERMINAL_COLS 80
+
 @interface PieConnection : NSObject {
 	AsyncSocket *socket;
 	NSError *error;
+	unichar screen[TERMINAL_ROWS][TERMINAL_COLS];
+	int foreground[TERMINAL_ROWS][TERMINAL_COLS];
+	int background[TERMINAL_ROWS][TERMINAL_COLS];
+	int currentRow, currentCol;
+	int savedRow, savedCol;
 }
 
 -(BOOL) connectToHost:(NSString *)host;

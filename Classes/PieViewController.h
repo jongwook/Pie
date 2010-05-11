@@ -13,9 +13,14 @@
 	UIScrollView *scrollView;
 	PieView *pieView;
 	UITextField *textField;
+	UILabel *koreanLabel;
 }
+
+- (BOOL)handleTextFieldChanged:(NSNotification *)notification;
+
 @property (nonatomic,retain) IBOutlet UIScrollView *scrollView;
 @property (nonatomic,retain) IBOutlet PieView *pieView;
 @property (nonatomic,retain) IBOutlet UITextField *textField;
+@property (nonatomic,retain) IBOutlet UILabel *koreanLabel;
 @end
 

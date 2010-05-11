@@ -10,7 +10,8 @@
 
 
 @interface PieView : UIView {
-	
+	NSStringEncoding encoding;
+	UIFont *font;
 }
 
 @end
