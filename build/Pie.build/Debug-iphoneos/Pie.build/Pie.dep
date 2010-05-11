@@ -1,13 +1,13 @@
-ce959462f62249a751b56a1df009d092 6213143f8c6c24705d99575ad59022fc ffffffffffffffffffffffffffffffff 476 /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app
 00000000000000000000000000000000 bb1e3ab2eca8e3133118134095f6efce ffffffffffffffffffffffffffffffff 102 /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app.dSYM
-d0cfbf583cc0996eaec056663562b424 0307fe1e566a05354f23f0f5ac055eea ffffffffffffffffffffffffffffffff 133372 /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/Pie
-d4f3464228a57aeb6378b072397a4689 05a4b494d10a8741d0d4d0456a665c59 ffffffffffffffffffffffffffffffff 16200 /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieConnection.o
+ce959462f62311d951b56a1df009d340 6213143f8c6c24705d99575ad59022fc ffffffffffffffffffffffffffffffff 476 /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app
+d0cfbf583cc1c110aec056663562b7f6 0307fe1e566a05354f23f0f5ac055eea ffffffffffffffffffffffffffffffff 134864 /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/Pie
+d4f3464228a57b6b6378b072397a457c 05a4b494d10a8741d0d4d0456a665c59 ffffffffffffffffffffffffffffffff 86476 /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieConnection.o
+7738496f7e3149d2dc0e052b615328af f16ec0de1d7367eac33e77080f93fe70 ffffffffffffffffffffffffffffffff 42244 /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieAppDelegate.o
 7738496f7e316e6adc0e052b61534829 2cf872ac2334ffade3a742fb186d142e ffffffffffffffffffffffffffffffff 13368 /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieView.o
 7738496f351a1585dc0e052b6152bbd5 5a6e969cd34a66f0955f7f4704c6b1ee ffffffffffffffffffffffffffffffff 191008 /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/AsyncSocket.o
 d4f34642638e08fc6378b072397a5eeb bc7d2ff67fa5d677eb8c53a48372e135 ffffffffffffffffffffffffffffffff 93680 /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieTerminal.o
 7738496f7efc414adc0e052b61504158 0e0f42be2b443a34f86d49c70f62de29 ffffffffffffffffffffffffffffffff 135476 /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/cp949.o
 7738496f7ef3acefdc0e052b615345df ef0d36cc9db42a6e8eeadeb5919d6805 ffffffffffffffffffffffffffffffff 44092 /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieViewController.o
-7738496f7e30102cdc0e052b61532888 f16ec0de1d7367eac33e77080f93fe70 ffffffffffffffffffffffffffffffff 42224 /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieAppDelegate.o
 7738496f35d9ef46dc0e052b61534df0 0fec74a6c90dad1056d908415026c7f5 ffffffffffffffffffffffffffffffff 6440 /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/main.o
 c0e2988532cf458d96cefcb14bbe836e 62f2b5847983361529e8be6a8a998d88 ffffffffffffffffffffffffffffffff 313 /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie.xcent
 00000000000000000000000000000000 68903f5211ae41b59ac23e8fe2e376ef ffffffffffffffffffffffffffffffff 7228 /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/embedded.mobileprovision

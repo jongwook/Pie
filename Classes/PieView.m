@@ -15,7 +15,6 @@ static int cols=80;
 
 -(void)didMoveToSuperview {
 	// initialization
-	encoding=-2147482590;	// cp949
 	font=[UIFont fontWithName:@"Courier" size:16.0f];
 	NSLog(@"PieView Initialized");
 	

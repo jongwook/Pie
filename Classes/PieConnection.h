@@ -14,12 +14,14 @@
 
 @interface PieConnection : NSObject {
 	AsyncSocket *socket;
+	NSStringEncoding encoding;
 	NSError *error;
 	unichar screen[TERMINAL_ROWS][TERMINAL_COLS];
 	int foreground[TERMINAL_ROWS][TERMINAL_COLS];
 	int background[TERMINAL_ROWS][TERMINAL_COLS];
 	int currentRow, currentCol;
 	int savedRow, savedCol;
+	int currentForeground, currentBackground;
 }
 
 -(BOOL) connectToHost:(NSString *)host;
@@ -31,5 +33,13 @@
 -(void) onSocket:(AsyncSocket *)sock didReadData:(NSData *)data withTag:(long)tag;
 -(void) onSocket:(AsyncSocket *)sock didWriteDataWithTag:(long)tag;
 
+-(void) parse;
+-(char) getchar;
+-(void) negotiate:(const char *)token;
+-(void) send:(const char *)token;
+-(void) send:(const char *)token length:(int)length;
+
+-(void) drawChar:(unichar)c;
+-(void) newline;
 
 @end
