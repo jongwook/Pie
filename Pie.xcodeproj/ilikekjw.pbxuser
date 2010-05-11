@@ -2,14 +2,14 @@
 {
 	1D3623240D0F684500981E51 /* PieAppDelegate.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {675, 584}}";
+			sepNavIntBoundsRect = "{{0, 0}, {836, 639}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 456}";
 		};
 	};
 	1D3623250D0F684500981E51 /* PieAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {810, 584}}";
+			sepNavIntBoundsRect = "{{0, 0}, {836, 639}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 656}";
 		};
@@ -86,6 +86,18 @@
 			EAC2D9B81198EE7D00FD0E52 /* PBXTextBookmark */ = EAC2D9B81198EE7D00FD0E52 /* PBXTextBookmark */;
 			EAC2D9B91198EE7D00FD0E52 /* PBXTextBookmark */ = EAC2D9B91198EE7D00FD0E52 /* PBXTextBookmark */;
 			EAC2D9BA1198EE7D00FD0E52 /* PBXTextBookmark */ = EAC2D9BA1198EE7D00FD0E52 /* PBXTextBookmark */;
+			EAC2D9D71198F4B200FD0E52 /* PBXTextBookmark */ = EAC2D9D71198F4B200FD0E52 /* PBXTextBookmark */;
+			EAC2D9D81198F4B200FD0E52 /* PBXTextBookmark */ = EAC2D9D81198F4B200FD0E52 /* PBXTextBookmark */;
+			EAC2D9D91198F4B200FD0E52 /* PBXTextBookmark */ = EAC2D9D91198F4B200FD0E52 /* PBXTextBookmark */;
+			EAC2D9DA1198F4B200FD0E52 /* PBXTextBookmark */ = EAC2D9DA1198F4B200FD0E52 /* PBXTextBookmark */;
+			EAC2D9DB1198F4B200FD0E52 /* PBXTextBookmark */ = EAC2D9DB1198F4B200FD0E52 /* PBXTextBookmark */;
+			EAC2D9DC1198F4B200FD0E52 /* PBXTextBookmark */ = EAC2D9DC1198F4B200FD0E52 /* PBXTextBookmark */;
+			EAC2D9E31198F54100FD0E52 /* PBXTextBookmark */ = EAC2D9E31198F54100FD0E52 /* PBXTextBookmark */;
+			EAC2D9E41198F54100FD0E52 /* PBXTextBookmark */ = EAC2D9E41198F54100FD0E52 /* PBXTextBookmark */;
+			EAC2D9E51198F54100FD0E52 /* PBXTextBookmark */ = EAC2D9E51198F54100FD0E52 /* PBXTextBookmark */;
+			EAC2D9E61198F54100FD0E52 /* PBXTextBookmark */ = EAC2D9E61198F54100FD0E52 /* PBXTextBookmark */;
+			EAC2D9E71198F54100FD0E52 /* PBXTextBookmark */ = EAC2D9E71198F54100FD0E52 /* PBXTextBookmark */;
+			EAC2D9E81198F54100FD0E52 /* PBXTextBookmark */ = EAC2D9E81198F54100FD0E52 /* PBXTextBookmark */;
 		};
 		sourceControlManager = EA0B96891198DC8300E7ACCD /* Source Control */;
 		userBuildSettings = {
@@ -290,7 +302,7 @@
 	EAC2D9B31198EE3800FD0E52 /* PieConnection.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {836, 639}}";
-			sepNavSelRange = "{196, 0}";
+			sepNavSelRange = "{164, 0}";
 			sepNavVisRange = "{0, 202}";
 		};
 	};
@@ -325,6 +337,154 @@
 		vrLoc = 0;
 	};
 	EAC2D9BA1198EE7D00FD0E52 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EAC2D9B21198EE3800FD0E52 /* PieConnection.h */;
+		name = "PieConnection.h: 13";
+		rLen = 0;
+		rLoc = 203;
+		rType = 0;
+		vrLen = 212;
+		vrLoc = 0;
+	};
+	EAC2D9CA1198F41100FD0E52 /* socket.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {836, 702}}";
+			sepNavSelRange = "{306, 0}";
+			sepNavVisRange = "{42, 870}";
+		};
+	};
+	EAC2D9CB1198F41100FD0E52 /* socket.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {836, 1079}}";
+			sepNavSelRange = "{211, 0}";
+			sepNavVisRange = "{0, 1157}";
+		};
+	};
+	EAC2D9CC1198F41100FD0E52 /* terminal.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {836, 767}}";
+			sepNavSelRange = "{81, 0}";
+			sepNavVisRange = "{0, 950}";
+		};
+	};
+	EAC2D9CD1198F41100FD0E52 /* terminal.mm */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {836, 4758}}";
+			sepNavSelRange = "{220, 0}";
+			sepNavVisRange = "{669, 997}";
+		};
+	};
+	EAC2D9D71198F4B200FD0E52 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* PieAppDelegate.h */;
+		name = "PieAppDelegate.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 456;
+		vrLoc = 0;
+	};
+	EAC2D9D81198F4B200FD0E52 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* PieAppDelegate.m */;
+		name = "PieAppDelegate.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 656;
+		vrLoc = 0;
+	};
+	EAC2D9D91198F4B200FD0E52 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EAC2D9CD1198F41100FD0E52 /* terminal.mm */;
+		name = "terminal.mm: 3";
+		rLen = 0;
+		rLoc = 40;
+		rType = 0;
+		vrLen = 1053;
+		vrLoc = 0;
+	};
+	EAC2D9DA1198F4B200FD0E52 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EAC2D9B31198EE3800FD0E52 /* PieConnection.m */;
+		name = "PieConnection.m: 10";
+		rLen = 0;
+		rLoc = 164;
+		rType = 0;
+		vrLen = 202;
+		vrLoc = 0;
+	};
+	EAC2D9DB1198F4B200FD0E52 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EAC2D9B21198EE3800FD0E52 /* PieConnection.h */;
+		name = "PieConnection.h: 11";
+		rLen = 0;
+		rLoc = 163;
+		rType = 0;
+		vrLen = 212;
+		vrLoc = 0;
+	};
+	EAC2D9DC1198F4B200FD0E52 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EAC2D9B21198EE3800FD0E52 /* PieConnection.h */;
+		name = "PieConnection.h: 10";
+		rLen = 0;
+		rLoc = 162;
+		rType = 0;
+		vrLen = 212;
+		vrLoc = 0;
+	};
+	EAC2D9E31198F54100FD0E52 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EAC2D9CC1198F41100FD0E52 /* terminal.h */;
+		name = "terminal.h: 6";
+		rLen = 0;
+		rLoc = 81;
+		rType = 0;
+		vrLen = 950;
+		vrLoc = 0;
+	};
+	EAC2D9E41198F54100FD0E52 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EAC2D9CA1198F41100FD0E52 /* socket.h */;
+		name = "socket.h: 21";
+		rLen = 0;
+		rLoc = 306;
+		rType = 0;
+		vrLen = 870;
+		vrLoc = 42;
+	};
+	EAC2D9E51198F54100FD0E52 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EAC2D9CB1198F41100FD0E52 /* socket.m */;
+		name = "socket.m: 9";
+		rLen = 0;
+		rLoc = 211;
+		rType = 0;
+		vrLen = 1157;
+		vrLoc = 0;
+	};
+	EAC2D9E61198F54100FD0E52 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EAC2D9CD1198F41100FD0E52 /* terminal.mm */;
+		name = "terminal.mm: 6";
+		rLen = 0;
+		rLoc = 220;
+		rType = 0;
+		vrLen = 997;
+		vrLoc = 669;
+	};
+	EAC2D9E71198F54100FD0E52 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EAC2D9B21198EE3800FD0E52 /* PieConnection.h */;
+		name = "PieConnection.h: 10";
+		rLen = 0;
+		rLoc = 162;
+		rType = 0;
+		vrLen = 212;
+		vrLoc = 0;
+	};
+	EAC2D9E81198F54100FD0E52 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = EAC2D9B21198EE3800FD0E52 /* PieConnection.h */;
 		name = "PieConnection.h: 13";

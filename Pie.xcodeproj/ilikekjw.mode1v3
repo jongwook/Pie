@@ -270,6 +270,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
+									<integer>11</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -294,7 +295,7 @@
 							<real>186</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>563 155 1105 903 0 0 1920 1058 </string>
+						<string>549 140 1105 903 0 0 1920 1058 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -324,17 +325,21 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>EAC2D9BA1198EE7D00FD0E52</string>
+										<string>EAC2D9E81198F54100FD0E52</string>
 										<key>history</key>
 										<array>
-											<string>EA0B96931198DEF500E7ACCD</string>
-											<string>EA0B96951198DEF500E7ACCD</string>
 											<string>EA0B96961198DEF500E7ACCD</string>
 											<string>EA0B96971198DEF500E7ACCD</string>
 											<string>EA0B96981198DEF500E7ACCD</string>
 											<string>EAC2D9B71198EE7D00FD0E52</string>
-											<string>EAC2D9B81198EE7D00FD0E52</string>
-											<string>EAC2D9B91198EE7D00FD0E52</string>
+											<string>EAC2D9D71198F4B200FD0E52</string>
+											<string>EAC2D9D81198F4B200FD0E52</string>
+											<string>EAC2D9DA1198F4B200FD0E52</string>
+											<string>EAC2D9E31198F54100FD0E52</string>
+											<string>EAC2D9E41198F54100FD0E52</string>
+											<string>EAC2D9E51198F54100FD0E52</string>
+											<string>EAC2D9E61198F54100FD0E52</string>
+											<string>EAC2D9E71198F54100FD0E52</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -348,7 +353,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {897, 671}}</string>
 								<key>RubberWindowFrame</key>
-								<string>563 155 1105 903 0 0 1920 1058 </string>
+								<string>549 140 1105 903 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -368,7 +373,7 @@
 								<key>Frame</key>
 								<string>{{0, 676}, {897, 186}}</string>
 								<key>RubberWindowFrame</key>
-								<string>563 155 1105 903 0 0 1920 1058 </string>
+								<string>549 140 1105 903 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -537,7 +542,7 @@
 		<string>/Users/ilikekjw/Documents/XCode/Pie/Pie.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>563 155 1105 903 0 0 1920 1058 </string>
+	<string>549 140 1105 903 0 0 1920 1058 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -553,12 +558,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>terminal.mm</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -567,7 +574,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {500, 218}}</string>
 								<key>RubberWindowFrame</key>
-								<string>562 429 500 500 0 0 1920 1058 </string>
+								<string>95 417 500 500 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -591,7 +598,7 @@
 								<key>Frame</key>
 								<string>{{0, 223}, {500, 236}}</string>
 								<key>RubberWindowFrame</key>
-								<string>562 429 500 500 0 0 1920 1058 </string>
+								<string>95 417 500 500 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXBuildResultsModule</string>
@@ -623,11 +630,11 @@
 			<key>WindowContentMinSize</key>
 			<string>486 300</string>
 			<key>WindowString</key>
-			<string>562 429 500 500 0 0 1920 1058 </string>
+			<string>95 417 500 500 0 0 1920 1058 </string>
 			<key>WindowToolGUID</key>
 			<string>EA0B96801198DC8300E7ACCD</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
