@@ -15,8 +15,7 @@
 		2899E5220DE3E06400AC0155 /* PieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* PieViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* PieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* PieViewController.m */; };
-		EA0B968F1198DDBA00E7ACCD /* pie.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA0B968B1198DDBA00E7ACCD /* pie.cpp */; };
-		EA0B96901198DDBA00E7ACCD /* socket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA0B968D1198DDBA00E7ACCD /* socket.cpp */; };
+		EAC2D9B41198EE3800FD0E52 /* PieConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC2D9B31198EE3800FD0E52 /* PieConnection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,10 +32,8 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Pie_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pie_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Pie-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Pie-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
-		EA0B968B1198DDBA00E7ACCD /* pie.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = pie.cpp; path = ../Pie__/Classes/pie.cpp; sourceTree = SOURCE_ROOT; };
-		EA0B968C1198DDBA00E7ACCD /* pie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pie.h; path = ../Pie__/Classes/pie.h; sourceTree = SOURCE_ROOT; };
-		EA0B968D1198DDBA00E7ACCD /* socket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = socket.cpp; path = ../Pie__/Classes/socket.cpp; sourceTree = SOURCE_ROOT; };
-		EA0B968E1198DDBA00E7ACCD /* socket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = socket.h; path = ../Pie__/Classes/socket.h; sourceTree = SOURCE_ROOT; };
+		EAC2D9B21198EE3800FD0E52 /* PieConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieConnection.h; sourceTree = "<group>"; };
+		EAC2D9B31198EE3800FD0E52 /* PieConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieConnection.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +57,8 @@
 				1D3623250D0F684500981E51 /* PieAppDelegate.m */,
 				28D7ACF60DDB3853001CB0EB /* PieViewController.h */,
 				28D7ACF70DDB3853001CB0EB /* PieViewController.m */,
-				EA0B968B1198DDBA00E7ACCD /* pie.cpp */,
-				EA0B968C1198DDBA00E7ACCD /* pie.h */,
-				EA0B968D1198DDBA00E7ACCD /* socket.cpp */,
-				EA0B968E1198DDBA00E7ACCD /* socket.h */,
+				EAC2D9B21198EE3800FD0E52 /* PieConnection.h */,
+				EAC2D9B31198EE3800FD0E52 /* PieConnection.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -174,8 +169,7 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* PieAppDelegate.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* PieViewController.m in Sources */,
-				EA0B968F1198DDBA00E7ACCD /* pie.cpp in Sources */,
-				EA0B96901198DDBA00E7ACCD /* socket.cpp in Sources */,
+				EAC2D9B41198EE3800FD0E52 /* PieConnection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
