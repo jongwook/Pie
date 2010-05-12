@@ -54,7 +54,7 @@ static int bufferlen=0;
 -(BOOL) connectToHost:(NSString *)host onPort:(int)port {
 	socket=[[AsyncSocket alloc]initWithDelegate:self userData:0L];
 	[socket connectToHost:host onPort:port error:&error];
-	
+	[UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
 	return YES;
 }
 
@@ -73,6 +73,7 @@ static int bufferlen=0;
 
 -(void) onSocket:(AsyncSocket *)sock didConnectToHost:(NSString *)host port:(UInt16)port {
 	NSLog(@"Connected to the host!");
+	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 	[self send:"\xff\xfb\x1f"];
 	[self send:"\xff\xfb\x20"];
 	[self send:"\xff\xfb\x18"];
@@ -100,7 +101,7 @@ static int bufferlen=0;
 }
 
 -(void) onSocket:(AsyncSocket *)sock didWriteDataWithTag:(long)tag {
-	
+	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 }
 
 -(void) parse {
@@ -129,8 +130,8 @@ static int bufferlen=0;
 						if(bufferlen==0) return;	// stop parsing
 						token[pos++]=[self getchar];
 					}
-					cursor++;
 					temp=token[cursor];
+					cursor++;
 				}
 				if(pos==cursor) {
 					if(bufferlen==0) return;	// stop parsing
@@ -281,8 +282,17 @@ static int bufferlen=0;
 			break;
 		case '\xfb':
 			// will
-			[self send:"\xff\xfe"];
-			[self send:&token[2] length:1];
+			switch(token[2]) {
+				case '\x01':
+					break;
+				case '\x03':
+					break;
+				case '\x05':
+					break;
+				default:
+					[self send:"\xff\xfe"];
+					[self send:&token[2] length:1];
+			}
 			break;
 		case '\xfc':
 			// won't
@@ -292,8 +302,10 @@ static int bufferlen=0;
 		case '\xfd':
 			// do
 			switch(token[2]) {
+				case '\x03':
+					break;
 				case '\x18':	// PieTerminal type
-					[self send:"\xff\xfd\x18"];
+					//[self send:"\xff\xfd\x18"];
 					break;
 				case '\x1f':	// nego win size
 					[self send:"\xff\xfa\x1f"];
@@ -301,7 +313,9 @@ static int bufferlen=0;
 					[self send:"\xff\xf0"];
 					break;
 				case '\x20':	// term speed
-					[self send:"\xff\xfb\x20"];
+					//[self send:"\xff\xfb\x20"];
+					break;
+				case '\x21':
 					break;
 				case '\x23':	// x disp loc
 					[self send:"\xff\xfc\x23"];
@@ -310,7 +324,7 @@ static int bufferlen=0;
 					[self send:"\xff\xfc\x24"];
 					break;
 				case '\x27':	// new env opt
-					[self send:"\xff\xfc\x27"];
+					//[self send:"\xff\xfc\x27"];
 					break;
 				default:
 					[self send:"\xff\xfc"];
@@ -343,10 +357,26 @@ static int bufferlen=0;
 	printf("\n");
 	NSData *data=[NSData dataWithBytes:token length:length];
 	[socket writeData:data withTimeout:-1 tag:1234L];
+	[UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
 }
 
 -(void) drawChar:(unichar)c {
 	unichar prev=screen[currentRow][currentCol];
+	/*
+	if(c==8) {	// backspace
+		screen[currentRow][currentCol]=' ';
+		foreground[currentRow][currentCol]=-1;
+		background[currentRow][currentCol]=-1;		
+		if(currentCol==0) {
+			if(currentRow>0) {
+				currentCol=TERMINAL_COLS-1;
+				currentRow--;
+			}
+		} else {
+			currentCol--;
+		}
+	}
+	 */
 	if(currentCol>0) {
 		unichar left=screen[currentRow][currentCol-1];
 		if(left>0x80) {
