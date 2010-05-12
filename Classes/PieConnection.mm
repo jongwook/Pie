@@ -9,6 +9,7 @@
 #include <sstream>
 
 #import "PieConnection.h"
+#import "PieView.h"
 
 #define BETWEEN(x,a,b) ( (x)>=(a) && (x)<=(b) )
 
@@ -16,6 +17,20 @@ static std::stringstream buffer;
 static int bufferlen=0;
 
 @implementation PieConnection
+
+@synthesize pieView;
+
+-(unichar *)screen {
+	return (unichar *)screen;
+}
+
+-(int *)foreground {
+	return (int *)foreground;
+}
+
+-(int *)background {
+	return (int *)background;
+}
 
 -(id) init {
 	currentRow=currentCol=0;
@@ -77,15 +92,11 @@ static int bufferlen=0;
 		buffer.write(buf,len);
 		bufferlen+=len;
 	}
-	for(int i=0;i<bufferlen;i++) {
-		int c=buffer.get();
-		printf("%02x ",c);
-		buffer.write((char*)&c,1);
-	}
-	printf("\n");
-
+	if(bufferlen>1000)
+		bufferlen=bufferlen;
 	[self parse];
 	[sock readDataWithTimeout:-1 tag:4321L];
+	[pieView setNeedsDisplay];
 }
 
 -(void) onSocket:(AsyncSocket *)sock didWriteDataWithTag:(long)tag {
@@ -228,6 +239,7 @@ static int bufferlen=0;
 			cursor=pos=0;
 		} else {
 			printf("%c",token[0]);
+			[self drawChar:token[0]];
 			cursor=pos=0;
 		}
 	} 
@@ -269,9 +281,13 @@ static int bufferlen=0;
 			break;
 		case '\xfb':
 			// will
+			[self send:"\xff\xfe"];
+			[self send:&token[2] length:1];
 			break;
 		case '\xfc':
 			// won't
+			[self send:"\xff\xfe"];
+			[self send:&token[2] length:1];
 			break;
 		case '\xfd':
 			// do

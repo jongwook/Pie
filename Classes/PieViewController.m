@@ -10,7 +10,7 @@
 
 @implementation PieViewController
 
-@synthesize scrollView, pieView, textField, koreanLabel;
+@synthesize scrollView, pieView, textField, koreanLabel, pie;
 
 /*
 // The designated initializer. Override to perform setup that is required before the view is loaded.
@@ -40,8 +40,11 @@
 	scrollView.maximumZoomScale=1.5;
 	scrollView.clipsToBounds=YES;
 	scrollView.delegate=self;
-	
 	scrollView.zoomScale=0.52;	
+	
+	pieView.pie=pie;
+	pie.pieView=pieView;
+	
 	// show keyboard
 	textField.delegate=self;
 	[textField becomeFirstResponder];
@@ -52,6 +55,7 @@
 - (BOOL)textField:(UITextField *)field shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)str {
 	if(str.length==0) {
 		NSLog(@"Backspace");
+		[self sendKey:8];
 		if(field.text.length>1) {
 			return YES;
 		} else {
@@ -66,9 +70,11 @@
 			int k=(field.text.length>0)?[field.text characterAtIndex:0]:0x20;
 			if(k!=0x20) {
 				NSLog(@"Korean Input(1) : %C, %04X", k, (int)k);
+				[self sendKey:k];
 			}
 			[field setText:@" "];
 			NSLog(@"Normal Input : %@, %04X", str,c);
+			[self sendKey:c];
 			[koreanLabel setHidden:YES];
 		}
 	}
@@ -81,6 +87,7 @@
 		unichar c=[textField.text characterAtIndex:0];
 		if (c!=0x20) {
 			NSLog(@"Korean Input(2) : %C, %04X", c, (int)c);
+			[self sendKey:c];
 		}
 		[textField setText:[textField.text substringFromIndex:1]];
 	}
@@ -112,6 +119,15 @@
 	// Release any retained subviews of the main view.
 	// e.g. self.myOutlet = nil;
 	[pieView release];
+}
+
+- (void)sendKey:(int)key {
+	if(key=='\n') {
+		[pie send:"\r\n"];
+	} else if(key<0x80) {
+		[pie send:(char *)&key length:1];
+	}
+	
 }
 
 

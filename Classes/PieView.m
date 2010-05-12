@@ -7,11 +7,11 @@
 //
 
 #import "PieView.h"
-
-static int rows=24;
-static int cols=80;
+#import "PieConnection.h"
 
 @implementation PieView
+
+@synthesize pie;
 
 -(void)didMoveToSuperview {
 	// initialization
@@ -20,23 +20,16 @@ static int cols=80;
 	
 }
 
-static const char *kor[]={"가","나","다","라","마","바","사","아"};
-
 -(void)drawRect:(CGRect)rect {
 	CGContextRef context = UIGraphicsGetCurrentContext();
 	CGContextSetLineWidth(context, 2.0);
 	CGContextSetStrokeColorWithColor(context, [UIColor blackColor].CGColor);
 	CGContextSetFillColorWithColor(context, [UIColor blackColor].CGColor);
 	
-	for (int i=0;i<rows;i++) {
-		for(int j=0;j<cols;j++) {
-			if (i%2==0) {
-				NSString *str=[NSString stringWithFormat:@"%c", 'A'+j];
-				[str drawAtPoint:CGPointMake(j*8.0f,i*20.0f) withFont:font];
-			} else if(j%2==0) {
-				NSString *str=[NSString stringWithUTF8String:kor[(j/2)%8]];
-				[str drawAtPoint:CGPointMake(j*8.0f,i*20.0f) withFont:font];
-			}
+	for (int i=0;i<TERMINAL_ROWS;i++) {
+		for(int j=0;j<TERMINAL_COLS;j++) {
+			NSString *str=[NSString stringWithFormat:@"%C", pie.screen[i*TERMINAL_COLS+j]];
+			[str drawAtPoint:CGPointMake(j*8.0f,i*20.0f) withFont:font];
 		}
 	}
 }

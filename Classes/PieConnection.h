@@ -12,6 +12,8 @@
 #define TERMINAL_ROWS 24
 #define TERMINAL_COLS 80
 
+@class PieView;
+
 @interface PieConnection : NSObject {
 	AsyncSocket *socket;
 	NSStringEncoding encoding;
@@ -22,7 +24,13 @@
 	int currentRow, currentCol;
 	int savedRow, savedCol;
 	int currentForeground, currentBackground;
+	PieView *pieView;
 }
+
+@property (readonly,assign) unichar *screen;
+@property (readonly,assign) int *foreground;
+@property (readonly,assign) int *background;
+@property (readwrite,nonatomic,retain) PieView *pieView;
 
 -(BOOL) connectToHost:(NSString *)host;
 -(BOOL) connectToHost:(NSString *)host onPort:(int)port;

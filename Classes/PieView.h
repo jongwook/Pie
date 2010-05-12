@@ -8,10 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@class PieConnection;
 
 @interface PieView : UIView {
-	
+	PieConnection *pie;
 	UIFont *font;
+	CGColorRef defaultForeground, defaultBackground;
+	CGColorRef colors[8];
 }
+
+@property (nonatomic,retain) PieConnection *pie;
 
 @end
