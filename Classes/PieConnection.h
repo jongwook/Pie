@@ -30,6 +30,7 @@
 @property (readonly,assign) unichar *screen;
 @property (readonly,assign) int *foreground;
 @property (readonly,assign) int *background;
+@property (readonly,assign) int currentRow, currentCol;
 @property (readwrite,nonatomic,retain) PieView *pieView;
 
 -(BOOL) connectToHost:(NSString *)host;

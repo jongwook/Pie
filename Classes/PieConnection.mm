@@ -18,7 +18,7 @@ static int bufferlen=0;
 
 @implementation PieConnection
 
-@synthesize pieView;
+@synthesize pieView, currentRow, currentCol;
 
 -(unichar *)screen {
 	return (unichar *)screen;
@@ -93,8 +93,14 @@ static int bufferlen=0;
 		buffer.write(buf,len);
 		bufferlen+=len;
 	}
-	if(bufferlen>1000)
-		bufferlen=bufferlen;
+	if(bufferlen<10) {
+		for(int i=0;i<bufferlen;i++) {
+			int c=buffer.get();
+			printf("%02x ",c);
+			buffer.write((char *)&c,1);
+		}
+		printf("\n");
+	}
 	[self parse];
 	[sock readDataWithTimeout:-1 tag:4321L];
 	[pieView setNeedsDisplay];
@@ -188,8 +194,8 @@ static int bufferlen=0;
 						break;
 					case 'H': case 'h':	// cursor position
 						cnt++;
-						currentRow=(cnt>=1)?value[0]:0;
-						currentCol=(cnt>=2)?value[1]:0;
+						currentRow=(cnt>=1)?MAX(value[0]-1,0):0;
+						currentCol=(cnt>=2)?MAX(value[1]-1,0):0;
 						done=YES;
 						break;
 					case 'J': case 'j':	// erase screen
@@ -226,8 +232,20 @@ static int bufferlen=0;
 						savedCol=currentCol;
 						done=YES;
 						break;
+					case 'K':			// erase line
+						for(int j=currentCol;j<80;j++) {
+							screen[currentRow][j]=' ';
+							foreground[currentRow][j]=-1;
+							background[currentRow][j]=-1;
+						}
+						done=YES;
+						break;
+					default:
+						done=YES;
 				}
 				if(done) {
+					token[pos]='\0';
+					NSLog(@"Escape sequence : ^%s",&token[1]);
 					cursor=pos=0;
 					break;
 				}
@@ -236,7 +254,10 @@ static int bufferlen=0;
 			[self newline];
 			printf("\n");
 			cursor=pos=0;
-		} else if (token[0]=='\r' || token[0]=='\0') {
+		} else if (token[0]=='\r') {
+			currentCol=0;
+			cursor=pos=0;
+		} else if (token[0]=='\0') {
 			cursor=pos=0;
 		} else {
 			printf("%c",token[0]);
@@ -362,21 +383,14 @@ static int bufferlen=0;
 
 -(void) drawChar:(unichar)c {
 	unichar prev=screen[currentRow][currentCol];
-	/*
-	if(c==8) {	// backspace
+	if(c=='\b') {	// backspace
+		if(currentCol!=0) {
+			currentCol--;
+		}
 		screen[currentRow][currentCol]=' ';
 		foreground[currentRow][currentCol]=-1;
 		background[currentRow][currentCol]=-1;		
-		if(currentCol==0) {
-			if(currentRow>0) {
-				currentCol=TERMINAL_COLS-1;
-				currentRow--;
-			}
-		} else {
-			currentCol--;
-		}
 	}
-	 */
 	if(currentCol>0) {
 		unichar left=screen[currentRow][currentCol-1];
 		if(left>0x80) {
@@ -406,6 +420,8 @@ static int bufferlen=0;
 		background[currentRow][currentCol+1]=currentBackground;
 		currentCol+=2;
 	}
+	
+	NSLog(@"drawChar(%02x) - (%d,%d)",c,currentRow,currentCol);
 }
 
 -(void) newline {

@@ -4,7 +4,6 @@ d4f346422867e6ae6378b072397a6464 05a4b494d10a8741d0d4d0456a665c59 ffffffffffffff
 7738496f7ef12068dc0e052b615327af ef0d36cc9db42a6e8eeadeb5919d6805 ffffffffffffffffffffffffffffffff 48332 /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieViewController.o
 7738496f7e30733bdc0e052b61534c35 f16ec0de1d7367eac33e77080f93fe70 ffffffffffffffffffffffffffffffff 42648 /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieAppDelegate.o
 7738496f35d9ef46dc0e052b61534df0 0fec74a6c90dad1056d908415026c7f5 ffffffffffffffffffffffffffffffff 6440 /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/main.o
-c0e2988532cf458d96cefcb14bbe836e 62f2b5847983361529e8be6a8a998d88 ffffffffffffffffffffffffffffffff 313 /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie.xcent
 00000000000000000000000000000000 bb1e3ab2eca8e3133118134095f6efce ffffffffffffffffffffffffffffffff 102 /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app.dSYM
 df2cf607bf70a6ebfd22c5272433b5bd 6213143f8c6c24705d99575ad59022fc ffffffffffffffffffffffffffffffff 476 /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app
 00000000000000000000000000000000 68903f5211ae41b59ac23e8fe2e376ef ffffffffffffffffffffffffffffffff 7228 /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/embedded.mobileprovision
@@ -19,6 +18,7 @@ c176dd3d759276220257f95ce158d10b 0307fe1e566a05354f23f0f5ac055eea ffffffffffffff
 00000000000000000000000000000000 c0e2988532cf458d96cefcb14bbe836e ffffffffffffffffffffffffffffffff 8 /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/PkgInfo
 00000000000000000000000000000000 c0e2988532cf458d96cefcb14bbe836e ffffffffffffffffffffffffffffffff 731 /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/Info.plist
 00000000000000000000000000000000 0b7fce2521a6e0914acf549cdd67d67b ffffffffffffffffffffffffffffffff 485 /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/ResourceRules.plist
+c0e2988532cf458d96cefcb14bbe836e 62f2b5847983361529e8be6a8a998d88 ffffffffffffffffffffffffffffffff 313 /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie.xcent
 d4f34642638e08fc6378b072397a5eeb bc7d2ff67fa5d677eb8c53a48372e135 ffffffffffffffffffffffffffffffff 93680 /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieTerminal.o
 7738496f7efc414adc0e052b61504158 0e0f42be2b443a34f86d49c70f62de29 ffffffffffffffffffffffffffffffff 135476 /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/cp949.o
 ffffffffffffffffffffffffffffffff ffffffffffffffffffffffffffffffff ffffffffffffffffffffffffffffffff 0 /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/Default

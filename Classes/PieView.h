@@ -13,10 +13,12 @@
 @interface PieView : UIView {
 	PieConnection *pie;
 	UIFont *font;
-	CGColorRef defaultForeground, defaultBackground;
+	CGColorRef defaultForeground, defaultBackground, cursorColor;
 	CGColorRef colors[8];
+	UILabel *cursor;
 }
 
 @property (nonatomic,retain) PieConnection *pie;
+@property (nonatomic,retain) IBOutlet UILabel *cursor;
 
 @end

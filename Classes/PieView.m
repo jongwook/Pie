@@ -11,7 +11,7 @@
 
 @implementation PieView
 
-@synthesize pie;
+@synthesize pie, cursor;
 
 -(void)didMoveToSuperview {
 	font=[UIFont fontWithName:@"Courier" size:16.0f];
@@ -20,6 +20,7 @@
 -(void)drawRect:(CGRect)rect {
 	defaultForeground=[UIColor colorWithRed:0.7 green:0.7 blue:0.7 alpha:1.0].CGColor;
 	defaultBackground=[UIColor colorWithRed:0.2 green:0.3 blue:0.5 alpha:1.0].CGColor;
+	cursorColor=[UIColor colorWithRed:0.4 green:1.0 blue:0.0 alpha:1.0].CGColor;
 	colors[0]=[UIColor blackColor].CGColor;
 	colors[1]=[UIColor redColor].CGColor;
 	colors[2]=[UIColor greenColor].CGColor;
@@ -30,30 +31,36 @@
 	colors[7]=[UIColor whiteColor].CGColor;
 	
 	CGContextRef context = UIGraphicsGetCurrentContext();
-	BOOL skipBackground=NO;
+	
+	// background rendering
 	for (int i=0;i<TERMINAL_ROWS;i++) {
 		for(int j=0;j<TERMINAL_COLS;j++) {
 			int index=i*TERMINAL_COLS+j;
-			//CGColorRef background=(pie.background[index]==-1)?defaultBackground:colors[pie.background[index]];
-			if(skipBackground==NO) {
-				CGContextSetFillColorWithColor(context, defaultBackground);
-				CGRect rect=CGRectMake(j*8.f, i*20.0f, 8.0f, 20.0f);
-				if(pie.screen[index]>0x1000) {
-					rect=CGRectMake(j*8.f, i*20.0f, 16.0f, 20.0f);
-					skipBackground=YES;
-				} 
-				CGContextAddRect(context,rect);
-				CGContextFillRect(context,rect);
-			} else {
-				skipBackground=NO;
-			}
-			
+			CGContextSetFillColorWithColor(context, defaultBackground);
+			CGRect tmprect=CGRectMake(j*8.f, i*20.0f, 8.0f, 20.0f);
+			CGContextAddRect(context,tmprect);
+			CGContextFillRect(context,tmprect);			
+		}
+	}
+	
+	// draw cursor
+	CGContextSetFillColorWithColor(context, cursorColor);
+	CGRect tmprect=CGRectMake(pie.currentCol*8.f, pie.currentRow*20.0f, 8.0f, 20.0f);
+	CGContextAddRect(context,tmprect);
+	CGContextFillRect(context,tmprect);	
+	
+	// text rendering
+	for (int i=0;i<TERMINAL_ROWS;i++) {
+		for(int j=0;j<TERMINAL_COLS;j++) {
+			int index=i*TERMINAL_COLS+j;
 			//CGColorRef foreground=(pie.foreground[index]==-1)?defaultBackground:colors[pie.foreground[index]];
 			CGContextSetFillColorWithColor(context, defaultForeground);
 			NSString *str=[NSString stringWithFormat:@"%C", pie.screen[index]];
 			[str drawAtPoint:CGPointMake(j*8.0f,i*20.0f) withFont:font];
 		}
 	}
+	
+	
 }
 
 @end
