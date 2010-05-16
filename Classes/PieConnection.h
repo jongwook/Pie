@@ -25,6 +25,8 @@
 	int savedRow, savedCol;
 	int currentForeground, currentBackground;
 	PieView *pieView;
+	BOOL reversed;
+	int pos;
 }
 
 @property (readonly,assign) unichar *screen;

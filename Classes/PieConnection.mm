@@ -35,15 +35,18 @@ static int bufferlen=0;
 -(id) init {
 	currentRow=currentCol=0;
 	savedRow=savedCol=0;
-	currentForeground=currentBackground=-1;
+	currentForeground=-1;
+	currentBackground=-2;
 	encoding=-2147482590;	// cp949
 	for(int i=0;i<TERMINAL_ROWS;i++) {
 		for(int j=0;j<TERMINAL_COLS;j++) {
 			screen[i][j]=' ';
 			foreground[i][j]=-1;
-			background[i][j]=-1;
+			background[i][j]=-2;
 		}
 	}
+	reversed=NO;
+	pos=0;
 	return self;
 }
 
@@ -112,7 +115,7 @@ static int bufferlen=0;
 
 -(void) parse {
 	static char token[32]="";
-	static int pos=0;
+	
 	int cursor=0;
 
 	while(bufferlen>0) {
@@ -159,7 +162,6 @@ static int bufferlen=0;
 				token[pos++]=[self getchar];
 			}
 			token[pos]='\0';
-			cursor=pos=0;
 			NSString *str=[NSString stringWithCString:token encoding:encoding];
 			unichar c=[str characterAtIndex:0];
 			[self drawChar:c];
@@ -203,9 +205,10 @@ static int bufferlen=0;
 							for(int j=0;j<TERMINAL_COLS;j++) { 
 								screen[i][j]=' ';
 								foreground[i][j]=-1;
-								background[i][j]=-1;
+								background[i][j]=-2;
 							}
 						}
+						reversed=NO;
 						done=YES;
 						break;
 					case 'M': case 'm': // set graphics mode
@@ -213,7 +216,22 @@ static int bufferlen=0;
 						for(int i=0;i<cnt;i++) {
 							if(value[i]==0) {
 								currentForeground=-1;
-								currentBackground=-1;
+								currentBackground=-2;
+								reversed=NO;
+							} else if(value[i]==7) {	// reverse video on
+								if(reversed==NO) {
+									int temp=currentBackground;
+									currentBackground=currentForeground;
+									currentForeground=temp;
+									reversed=YES;
+								}
+							} else if(value[i]==27) {
+								if(reversed==YES) {
+									int temp=currentBackground;
+									currentBackground=currentForeground;
+									currentForeground=temp;
+									reversed=NO;
+								}
 							} else if(value[i]>=30 && value[i]<40) {
 								currentForeground=value[i]-30;
 							} else if(value[i]>=40 && value[i]<50) {
@@ -236,7 +254,7 @@ static int bufferlen=0;
 						for(int j=currentCol;j<80;j++) {
 							screen[currentRow][j]=' ';
 							foreground[currentRow][j]=-1;
-							background[currentRow][j]=-1;
+							background[currentRow][j]=-2;
 						}
 						done=YES;
 						break;
@@ -246,24 +264,19 @@ static int bufferlen=0;
 				if(done) {
 					token[pos]='\0';
 					NSLog(@"Escape sequence : ^%s",&token[1]);
-					cursor=pos=0;
 					break;
 				}
 			}
 		} else if (token[0]=='\n') {
 			[self newline];
 			printf("\n");
-			cursor=pos=0;
 		} else if (token[0]=='\r') {
 			currentCol=0;
-			cursor=pos=0;
-		} else if (token[0]=='\0') {
-			cursor=pos=0;
-		} else {
+		} else if (token[0]>=0x20) {
 			printf("%c",token[0]);
 			[self drawChar:token[0]];
-			cursor=pos=0;
 		}
+		cursor=pos=0;
 	} 
 }
 
@@ -389,7 +402,7 @@ static int bufferlen=0;
 		}
 		screen[currentRow][currentCol]=' ';
 		foreground[currentRow][currentCol]=-1;
-		background[currentRow][currentCol]=-1;		
+		background[currentRow][currentCol]=-2;		
 	}
 	if(currentCol>0) {
 		unichar left=screen[currentRow][currentCol-1];
@@ -421,7 +434,7 @@ static int bufferlen=0;
 		currentCol+=2;
 	}
 	
-	NSLog(@"drawChar(%02x) - (%d,%d)",c,currentRow,currentCol);
+	//NSLog(@"drawChar(%02x) - (%d,%d)",c,currentRow,currentCol);
 }
 
 -(void) newline {
@@ -438,7 +451,7 @@ static int bufferlen=0;
 				} else {
 					screen[i][j]=' ';
 					foreground[i][j]=-1;
-					background[i][j]=-1;
+					background[i][j]=-2;
 				}
 			}
 		}
