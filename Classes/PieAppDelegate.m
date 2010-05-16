@@ -18,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
 	pie=[[PieConnection alloc] init];
-	[pie connectToHost:@"loco.kaist.ac.kr"];
+	[pie connectToHost:@"noty.kaist.ac.kr"];
 	viewController.pie=pie;
 	
     // Override point for customization after app launch    
