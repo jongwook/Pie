@@ -12,9 +12,12 @@
 #define TERMINAL_ROWS 24
 #define TERMINAL_COLS 80
 
-@class PieView;
+@class PieView, PieViewController;
 
 @interface PieConnection : NSObject {
+	PieViewController *viewController;
+	PieView *pieView;
+	
 	AsyncSocket *socket;
 	NSStringEncoding encoding;
 	NSError *error;
@@ -24,7 +27,6 @@
 	int currentRow, currentCol;
 	int savedRow, savedCol;
 	int currentForeground, currentBackground;
-	PieView *pieView;
 	BOOL reversed;
 	int pos;
 }
@@ -33,7 +35,8 @@
 @property (readonly,assign) int *foreground;
 @property (readonly,assign) int *background;
 @property (readonly,assign) int currentRow, currentCol;
-@property (readwrite,nonatomic,retain) PieView *pieView;
+@property (nonatomic,retain) PieView *pieView;
+@property (nonatomic,retain) PieViewController *viewController;
 
 -(BOOL) connectToHost:(NSString *)host;
 -(BOOL) connectToHost:(NSString *)host onPort:(int)port;

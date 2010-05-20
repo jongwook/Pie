@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PieAppDelegate.h"
 
 @class PieConnection;
 
 @interface PieView : UIView {
+	
 	PieConnection *pie;
 	UIFont *font;
 	CGColorRef defaultForeground, defaultBackground, cursorColor;

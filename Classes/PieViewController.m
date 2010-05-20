@@ -10,7 +10,7 @@
 
 @implementation PieViewController
 
-@synthesize scrollView, pieView, textField, koreanLabel, pie;
+@synthesize scrollView, pieView, textField, koreanLabel, pie, appDelegate;
 
 /*
 // The designated initializer. Override to perform setup that is required before the view is loaded.
@@ -130,6 +130,13 @@
 	
 }
 
+- (void)disconnect {
+	[textField resignFirstResponder];
+}
+
+- (IBAction)restart{
+	[appDelegate restart];
+}
 
 - (void)dealloc {
     [super dealloc];

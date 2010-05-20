@@ -18,7 +18,7 @@ static int bufferlen=0;
 
 @implementation PieConnection
 
-@synthesize pieView, currentRow, currentCol;
+@synthesize pieView, viewController, currentRow, currentCol;
 
 -(unichar *)screen {
 	return (unichar *)screen;
@@ -67,6 +67,7 @@ static int bufferlen=0;
 }
 
 -(void) onSocketDidDisconnect:(AsyncSocket *)sock {
+	[viewController disconnect];
 	NSLog(@"Socket Disconnected");
 }
 

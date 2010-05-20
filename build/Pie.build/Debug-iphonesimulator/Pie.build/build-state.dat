@@ -1,7 +1,7 @@
 TPie
 v7
 r0
-t295672343.984755
+t295906511.843520
 cCheck dependencies
 cProcessInfoPlistFile /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/Pie.app/Info.plist Pie-Info.plist
 cCompileXIB /Users/ilikekjw/Documents/XCode/Pie/MainWindow.xib
@@ -9,6 +9,7 @@ cCompileXIB /Users/ilikekjw/Documents/XCode/Pie/PieViewController.xib
 cCpResource build/Debug-iphonesimulator/Pie.app/pie.png pie.png
 cCpResource build/Debug-iphonesimulator/Pie.app/Default.png Default.png
 cCpResource build/Debug-iphonesimulator/Pie.app/icon57.png icon57.png
+cCompileXIB /Users/ilikekjw/Documents/XCode/Pie/Classes/PieConnectView.xib
 cProcessPCH /var/folders/-X/-XnNqKtMHQu-amOp+qZWV++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-arawhjdokrtklcbnjoocdvtteiwu/Pie_Prefix.pch.gch Pie_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
 cProcessPCH++ /var/folders/-X/-XnNqKtMHQu-amOp+qZWV++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-fakvhhudzfmkbeesahhksayeysds/Pie_Prefix.pch.gch Pie_Prefix.pch normal i386 objective-c++ com.apple.compilers.gcc.4_2
 cCompileC build/Pie.build/Debug-iphonesimulator/Pie.build/Objects-normal/i386/main.o /Users/ilikekjw/Documents/XCode/Pie/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
@@ -17,6 +18,7 @@ cCompileC build/Pie.build/Debug-iphonesimulator/Pie.build/Objects-normal/i386/Pi
 cCompileC build/Pie.build/Debug-iphonesimulator/Pie.build/Objects-normal/i386/AsyncSocket.o /Users/ilikekjw/Documents/XCode/Pie/Classes/AsyncSocket.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/Pie.build/Debug-iphonesimulator/Pie.build/Objects-normal/i386/PieView.o /Users/ilikekjw/Documents/XCode/Pie/Classes/PieView.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/Pie.build/Debug-iphonesimulator/Pie.build/Objects-normal/i386/PieConnection.o /Users/ilikekjw/Documents/XCode/Pie/Classes/PieConnection.mm normal i386 objective-c++ com.apple.compilers.gcc.4_2
+cCompileC build/Pie.build/Debug-iphonesimulator/Pie.build/Objects-normal/i386/PieConnectView.o /Users/ilikekjw/Documents/XCode/Pie/Classes/PieConnectView.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cLd /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/Pie.app/Pie normal i386
 cGenerateDSYMFile /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/Pie.app.dSYM /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/Pie.app/Pie
 cTouch /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/Pie.app
@@ -183,23 +185,42 @@ i<netdb.h>
 i<CFNetwork/CFNetwork.h>
 
 N/Users/ilikekjw/Documents/XCode/Pie/Classes/PieAppDelegate.h
-c000000004BE8C3BD00000000000001F7
-t1273545661
-s503
+c000000004BF1F62100000000000002C1
+t1274148385
+s705
 i<UIKit/UIKit.h>
 i"PieConnection.h"
 
 N/Users/ilikekjw/Documents/XCode/Pie/Classes/PieAppDelegate.m
-c000000004BEF22540000000000000304
-t1273963092
-s772
+c000000004BF2F54D0000000000000621
+t1274213709
+s1569
 i"PieAppDelegate.h"
 i"PieViewController.h"
+i"PieConnectView.h"
+
+N/Users/ilikekjw/Documents/XCode/Pie/Classes/PieConnectView.h
+c000000004BF1F5FE0000000000000210
+t1274148350
+s528
+i<UIKit/UIKit.h>
+i"PieAppDelegate.h"
+
+N/Users/ilikekjw/Documents/XCode/Pie/Classes/PieConnectView.m
+c000000004BF2F35600000000000004B6
+t1274213206
+s1206
+i"PieConnectView.h"
+
+N/Users/ilikekjw/Documents/XCode/Pie/Classes/PieConnectView.xib
+c000000004BF1D01D00000000000060D8
+t1274138653
+s24792
 
 N/Users/ilikekjw/Documents/XCode/Pie/Classes/PieConnection.h
-c000000004BEF1F54000000000000060C
-t1273962324
-s1548
+c000000004BF097DA0000000000000695
+t1274058714
+s1685
 i<UIKit/UIKit.h>
 i"AsyncSocket.h"
 
@@ -210,9 +231,9 @@ s1381
 i"PieConnection.h"
 
 N/Users/ilikekjw/Documents/XCode/Pie/Classes/PieConnection.mm
-c000000004BEF1F600000000000002944
-t1273962336
-s10564
+c000000004BF213CE0000000000002AF8
+t1274155982
+s11000
 i<sstream>
 i"PieConnection.h"
 i"PieView.h"
@@ -231,30 +252,31 @@ s7472
 i"PieTerminal.h"
 
 N/Users/ilikekjw/Documents/XCode/Pie/Classes/PieView.h
-c000000004BEF212000000000000001CF
-t1273962784
-s463
+c000000004BF08B1000000000000001EC
+t1274055440
+s492
 i<UIKit/UIKit.h>
+i"PieAppDelegate.h"
 
 N/Users/ilikekjw/Documents/XCode/Pie/Classes/PieView.m
-c000000004BEF62480000000000000867
-t1273979464
-s2151
+c000000004BEF7146000000000000087E
+t1273983302
+s2174
 i"PieView.h"
 i"PieConnection.h"
 
 N/Users/ilikekjw/Documents/XCode/Pie/Classes/PieViewController.h
-c000000004BE9F0D1000000000000032B
-t1273622737
-s811
+c000000004BF1F60C00000000000003C4
+t1274148364
+s964
 i<UIKit/UIKit.h>
 i"PieView.h"
 i"PieConnection.h"
 
 N/Users/ilikekjw/Documents/XCode/Pie/Classes/PieViewController.m
-c000000004BE9F7D20000000000000DA5
-t1273624530
-s3493
+c000000004BF1F6190000000000000E1C
+t1274148377
+s3612
 i"PieViewController.h"
 
 N/Users/ilikekjw/Documents/XCode/Pie/Classes/cp949.m
@@ -305,14 +327,14 @@ t1273567246
 s95096
 
 N/Users/ilikekjw/Documents/XCode/Pie/MainWindow.xib
-c000000004BE8A4F00000000000002620
-t1273537776
-s9760
+c000000004BF06B05000000000000562F
+t1274047237
+s22063
 
 N/Users/ilikekjw/Documents/XCode/Pie/PieViewController.xib
-c000000004BEF62950000000000006BF5
-t1273979541
-s27637
+c000000004BF2134F0000000000006EA0
+t1274155855
+s28320
 
 N/Users/ilikekjw/Documents/XCode/Pie/Pie_Prefix.pch
 c000000004BE8A4F000000000000000AF
@@ -322,11 +344,11 @@ i<Foundation/Foundation.h>
 i<UIKit/UIKit.h>
 
 N/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/Pie.app
-t1273979543
-s340
+t1274213710
+s374
 
 N/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/Pie.app.dSYM
-t1273979465
+t1274213710
 s102
 
 N/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/Pie.app/Default.png
@@ -338,16 +360,20 @@ t1273629084
 s637
 
 N/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/Pie.app/MainWindow.nib
-t1273537792
+t1274155734
 s1500
 
 N/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/Pie.app/Pie
-t1273979465
-s127392
+t1274213710
+s134148
+
+N/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/Pie.app/PieConnectView.nib
+t1274155735
+s3946
 
 N/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/Pie.app/PieViewController.nib
-t1273979543
-s3615
+t1274155857
+s4178
 
 N/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/Pie.app/PkgInfo
 t1273629084
@@ -366,29 +392,33 @@ t1273556156
 s155912
 
 N/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Objects-normal/i386/Pie.LinkFileList
-c000000004BEA091700000000000002C4
-t1273628951
-s708
+c000000004BF212D6000000000000033D
+t1274155734
+s829
 
 N/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Objects-normal/i386/PieAppDelegate.o
-t1273963093
-s41316
+t1274213710
+s45124
+
+N/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Objects-normal/i386/PieConnectView.o
+t1274213227
+s27692
 
 N/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Objects-normal/i386/PieConnection.o
-t1273962895
-s113572
+t1274156002
+s114100
 
 N/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Objects-normal/i386/PieTerminal.o
 t1273551142
 s93804
 
 N/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Objects-normal/i386/PieView.o
-t1273979465
-s19272
+t1274155736
+s19464
 
 N/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Objects-normal/i386/PieViewController.o
-t1273962894
-s45812
+t1274155736
+s49324
 
 N/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Objects-normal/i386/cp949.o
 t1273543871
@@ -495,7 +525,7 @@ s925
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies295672342#295672342#0(0"0(0#1#0"4300911832#0"0#
+lSLF07#2@18"Check dependencies295906511#295906511#0(0"0(0#1#0"4300911832#0"0#
 
 CCompileC build/Pie.build/Debug-iphonesimulator/Pie.build/Objects-normal/i386/AsyncSocket.o /Users/ilikekjw/Documents/XCode/Pie/Classes/AsyncSocket.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s295248956.311339
@@ -511,8 +541,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@65"Compile /Users/ilikekjw/Documents/XCode/Pie/Classes/AsyncSocket.m295248956#295248956#0(0"0(0#0#57"/Users/ilikekjw/Documents/XCode/Pie/Classes/AsyncSocket.m4300911832#1768"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-generated-files.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-own-target-headers.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-all-target-headers.hmap -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-project-headers.hmap -F/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator -I/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/include -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/DerivedSources/i386 -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/DerivedSources -include /var/folders/-X/-XnNqKtMHQu-amOp+qZWV++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-arawhjdokrtklcbnjoocdvtteiwu/Pie_Prefix.pch -c /Users/ilikekjw/Documents/XCode/Pie/Classes/AsyncSocket.m -o /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Objects-normal/i386/AsyncSocket.o0#
 
 CCompileC build/Pie.build/Debug-iphonesimulator/Pie.build/Objects-normal/i386/PieAppDelegate.o /Users/ilikekjw/Documents/XCode/Pie/Classes/PieAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s295655892.880674
-e295655893.014146
+s295906510.526173
+e295906510.649911
 r1
 xCompileC
 xbuild/Pie.build/Debug-iphonesimulator/Pie.build/Objects-normal/i386/PieAppDelegate.o
@@ -521,7 +551,20 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@68"Compile /Users/ilikekjw/Documents/XCode/Pie/Classes/PieAppDelegate.m295655892#295655893#0(0"0(0#0#60"/Users/ilikekjw/Documents/XCode/Pie/Classes/PieAppDelegate.m4300911832#1774"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-generated-files.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-own-target-headers.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-all-target-headers.hmap -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-project-headers.hmap -F/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator -I/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/include -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/DerivedSources/i386 -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/DerivedSources -include /var/folders/-X/-XnNqKtMHQu-amOp+qZWV++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-arawhjdokrtklcbnjoocdvtteiwu/Pie_Prefix.pch -c /Users/ilikekjw/Documents/XCode/Pie/Classes/PieAppDelegate.m -o /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Objects-normal/i386/PieAppDelegate.o0#
+lSLF07#2@68"Compile /Users/ilikekjw/Documents/XCode/Pie/Classes/PieAppDelegate.m295906510#295906510#0(0"0(0#0#60"/Users/ilikekjw/Documents/XCode/Pie/Classes/PieAppDelegate.m4300911832#1774"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-generated-files.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-own-target-headers.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-all-target-headers.hmap -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-project-headers.hmap -F/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator -I/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/include -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/DerivedSources/i386 -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/DerivedSources -include /var/folders/-X/-XnNqKtMHQu-amOp+qZWV++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-arawhjdokrtklcbnjoocdvtteiwu/Pie_Prefix.pch -c /Users/ilikekjw/Documents/XCode/Pie/Classes/PieAppDelegate.m -o /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Objects-normal/i386/PieAppDelegate.o0#
+
+CCompileC build/Pie.build/Debug-iphonesimulator/Pie.build/Objects-normal/i386/PieConnectView.o /Users/ilikekjw/Documents/XCode/Pie/Classes/PieConnectView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s295906027.513806
+e295906027.671877
+r1
+xCompileC
+xbuild/Pie.build/Debug-iphonesimulator/Pie.build/Objects-normal/i386/PieConnectView.o
+x/Users/ilikekjw/Documents/XCode/Pie/Classes/PieConnectView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@68"Compile /Users/ilikekjw/Documents/XCode/Pie/Classes/PieConnectView.m295906027#295906027#0(0"0(0#0#60"/Users/ilikekjw/Documents/XCode/Pie/Classes/PieConnectView.m4300911832#1774"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-generated-files.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-own-target-headers.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-all-target-headers.hmap -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-project-headers.hmap -F/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator -I/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/include -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/DerivedSources/i386 -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/DerivedSources -include /var/folders/-X/-XnNqKtMHQu-amOp+qZWV++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-arawhjdokrtklcbnjoocdvtteiwu/Pie_Prefix.pch -c /Users/ilikekjw/Documents/XCode/Pie/Classes/PieConnectView.m -o /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Objects-normal/i386/PieConnectView.o0#
 
 CCompileC build/Pie.build/Debug-iphonesimulator/Pie.build/Objects-normal/i386/PieConnection.o /Users/ilikekjw/Documents/XCode/Pie/Classes/PieConnection.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s295252608.129121
@@ -537,8 +580,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@67"Compile /Users/ilikekjw/Documents/XCode/Pie/Classes/PieConnection.m295252608#295252608#0(0"0(0#0#59"/Users/ilikekjw/Documents/XCode/Pie/Classes/PieConnection.m8386658438684291072#1772"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-generated-files.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-own-target-headers.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-all-target-headers.hmap -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-project-headers.hmap -F/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator -I/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/include -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/DerivedSources/i386 -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/DerivedSources -include /var/folders/-X/-XnNqKtMHQu-amOp+qZWV++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-arawhjdokrtklcbnjoocdvtteiwu/Pie_Prefix.pch -c /Users/ilikekjw/Documents/XCode/Pie/Classes/PieConnection.m -o /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Objects-normal/i386/PieConnection.o0#
 
 CCompileC build/Pie.build/Debug-iphonesimulator/Pie.build/Objects-normal/i386/PieConnection.o /Users/ilikekjw/Documents/XCode/Pie/Classes/PieConnection.mm normal i386 objective-c++ com.apple.compilers.gcc.4_2
-s295655694.687163
-e295655695.142971
+s295848801.710317
+e295848802.217609
 r1
 xCompileC
 xbuild/Pie.build/Debug-iphonesimulator/Pie.build/Objects-normal/i386/PieConnection.o
@@ -547,7 +590,7 @@ xnormal
 xi386
 xobjective-c++
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@68"Compile /Users/ilikekjw/Documents/XCode/Pie/Classes/PieConnection.mm295655694#295655695#0(0"0(0#0#60"/Users/ilikekjw/Documents/XCode/Pie/Classes/PieConnection.mm4300911832#1794"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-generated-files.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-own-target-headers.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-all-target-headers.hmap -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-project-headers.hmap -F/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator -I/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/include -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/DerivedSources/i386 -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/DerivedSources -include /var/folders/-X/-XnNqKtMHQu-amOp+qZWV++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-fakvhhudzfmkbeesahhksayeysds/Pie_Prefix.pch -c /Users/ilikekjw/Documents/XCode/Pie/Classes/PieConnection.mm -o /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Objects-normal/i386/PieConnection.o0#
+lSLF07#2@68"Compile /Users/ilikekjw/Documents/XCode/Pie/Classes/PieConnection.mm295848801#295848802#0(0"0(0#0#60"/Users/ilikekjw/Documents/XCode/Pie/Classes/PieConnection.mm4300911832#1794"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-generated-files.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-own-target-headers.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-all-target-headers.hmap -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-project-headers.hmap -F/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator -I/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/include -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/DerivedSources/i386 -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/DerivedSources -include /var/folders/-X/-XnNqKtMHQu-amOp+qZWV++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-fakvhhudzfmkbeesahhksayeysds/Pie_Prefix.pch -c /Users/ilikekjw/Documents/XCode/Pie/Classes/PieConnection.mm -o /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Objects-normal/i386/PieConnection.o0#
 
 CCompileC build/Pie.build/Debug-iphonesimulator/Pie.build/Objects-normal/i386/PieTerminal.o /Users/ilikekjw/Documents/XCode/Pie/Classes/PieTerminal.mm normal i386 objective-c++ com.apple.compilers.gcc.4_2
 s295243942.018383
@@ -563,8 +606,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@66"Compile /Users/ilikekjw/Documents/XCode/Pie/Classes/PieTerminal.mm295243942#295243942#0(0"0(0#0#58"/Users/ilikekjw/Documents/XCode/Pie/Classes/PieTerminal.mm4300911832#1790"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-generated-files.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-own-target-headers.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-all-target-headers.hmap -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-project-headers.hmap -F/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator -I/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/include -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/DerivedSources/i386 -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/DerivedSources -include /var/folders/-X/-XnNqKtMHQu-amOp+qZWV++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-fakvhhudzfmkbeesahhksayeysds/Pie_Prefix.pch -c /Users/ilikekjw/Documents/XCode/Pie/Classes/PieTerminal.mm -o /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Objects-normal/i386/PieTerminal.o0#
 
 CCompileC build/Pie.build/Debug-iphonesimulator/Pie.build/Objects-normal/i386/PieView.o /Users/ilikekjw/Documents/XCode/Pie/Classes/PieView.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s295672265.515236
-e295672265.648937
+s295848536.469276
+e295848536.557426
 r1
 xCompileC
 xbuild/Pie.build/Debug-iphonesimulator/Pie.build/Objects-normal/i386/PieView.o
@@ -573,11 +616,11 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@61"Compile /Users/ilikekjw/Documents/XCode/Pie/Classes/PieView.m295672265#295672265#0(0"0(0#0#53"/Users/ilikekjw/Documents/XCode/Pie/Classes/PieView.m4300911832#1760"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-generated-files.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-own-target-headers.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-all-target-headers.hmap -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-project-headers.hmap -F/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator -I/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/include -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/DerivedSources/i386 -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/DerivedSources -include /var/folders/-X/-XnNqKtMHQu-amOp+qZWV++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-arawhjdokrtklcbnjoocdvtteiwu/Pie_Prefix.pch -c /Users/ilikekjw/Documents/XCode/Pie/Classes/PieView.m -o /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Objects-normal/i386/PieView.o0#
+lSLF07#2@61"Compile /Users/ilikekjw/Documents/XCode/Pie/Classes/PieView.m295848536#295848536#0(0"0(0#0#53"/Users/ilikekjw/Documents/XCode/Pie/Classes/PieView.m4300911832#1760"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-generated-files.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-own-target-headers.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-all-target-headers.hmap -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-project-headers.hmap -F/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator -I/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/include -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/DerivedSources/i386 -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/DerivedSources -include /var/folders/-X/-XnNqKtMHQu-amOp+qZWV++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-arawhjdokrtklcbnjoocdvtteiwu/Pie_Prefix.pch -c /Users/ilikekjw/Documents/XCode/Pie/Classes/PieView.m -o /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Objects-normal/i386/PieView.o0#
 
 CCompileC build/Pie.build/Debug-iphonesimulator/Pie.build/Objects-normal/i386/PieViewController.o /Users/ilikekjw/Documents/XCode/Pie/Classes/PieViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s295655694.532552
-e295655694.687062
+s295848535.462370
+e295848536.469001
 r1
 xCompileC
 xbuild/Pie.build/Debug-iphonesimulator/Pie.build/Objects-normal/i386/PieViewController.o
@@ -586,7 +629,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@71"Compile /Users/ilikekjw/Documents/XCode/Pie/Classes/PieViewController.m295655694#295655694#0(0"0(0#0#63"/Users/ilikekjw/Documents/XCode/Pie/Classes/PieViewController.m4300911832#1780"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-generated-files.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-own-target-headers.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-all-target-headers.hmap -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-project-headers.hmap -F/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator -I/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/include -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/DerivedSources/i386 -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/DerivedSources -include /var/folders/-X/-XnNqKtMHQu-amOp+qZWV++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-arawhjdokrtklcbnjoocdvtteiwu/Pie_Prefix.pch -c /Users/ilikekjw/Documents/XCode/Pie/Classes/PieViewController.m -o /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Objects-normal/i386/PieViewController.o0#
+lSLF07#2@71"Compile /Users/ilikekjw/Documents/XCode/Pie/Classes/PieViewController.m295848535#295848536#0(0"0(0#0#63"/Users/ilikekjw/Documents/XCode/Pie/Classes/PieViewController.m4300911832#1780"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-generated-files.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-own-target-headers.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-all-target-headers.hmap -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-project-headers.hmap -F/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator -I/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/include -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/DerivedSources/i386 -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/DerivedSources -include /var/folders/-X/-XnNqKtMHQu-amOp+qZWV++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-arawhjdokrtklcbnjoocdvtteiwu/Pie_Prefix.pch -c /Users/ilikekjw/Documents/XCode/Pie/Classes/PieViewController.m -o /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Objects-normal/i386/PieViewController.o0#
 
 CCompileC build/Pie.build/Debug-iphonesimulator/Pie.build/Objects-normal/i386/cp949.o /Users/ilikekjw/Documents/XCode/Pie/../../../Dropbox/urMus/두루미/cp949.cpp normal i386 c++ com.apple.compilers.gcc.4_2
 r0
@@ -680,21 +723,31 @@ xobjective-c++
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@63"Compile /Users/ilikekjw/Documents/XCode/Pie/Classes/terminal.mm295236912#295236912#0(0"0(0#0#55"/Users/ilikekjw/Documents/XCode/Pie/Classes/terminal.mm4300911832#1784"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-generated-files.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-own-target-headers.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-all-target-headers.hmap -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-project-headers.hmap -F/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator -I/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/include -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/DerivedSources/i386 -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/DerivedSources -include /var/folders/-X/-XnNqKtMHQu-amOp+qZWV++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-fakvhhudzfmkbeesahhksayeysds/Pie_Prefix.pch -c /Users/ilikekjw/Documents/XCode/Pie/Classes/terminal.mm -o /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Objects-normal/i386/terminal.o0#
 
+CCompileXIB /Users/ilikekjw/Documents/XCode/Pie/Classes/PieConnectView.xib
+s295848534.918565
+e295848535.460680
+r1
+xCompileXIB
+x/Users/ilikekjw/Documents/XCode/Pie/Classes/PieConnectView.xib
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+lSLF07#2@37"CompileXIB Classes/PieConnectView.xib295848534#295848535#0(84"Couldn't open shared capabilities memory GSCapabilities (No such file or directory)0(0#0#62"/Users/ilikekjw/Documents/XCode/Pie/Classes/PieConnectView.xib4300911832#485"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/Pie.app/PieConnectView.nib /Users/ilikekjw/Documents/XCode/Pie/Classes/PieConnectView.xib0#
+
 CCompileXIB /Users/ilikekjw/Documents/XCode/Pie/MainWindow.xib
-s295230584.720960
-e295230592.724007
+s295848534.604209
+e295848534.918300
 r1
 xCompileXIB
 x/Users/ilikekjw/Documents/XCode/Pie/MainWindow.xib
-lSLF07#2@25"CompileXIB MainWindow.xib295230584#295230592#0(0"0(0#0#50"/Users/ilikekjw/Documents/XCode/Pie/MainWindow.xib4300911832#469"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/Pie.app/MainWindow.nib /Users/ilikekjw/Documents/XCode/Pie/MainWindow.xib0#
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+lSLF07#2@25"CompileXIB MainWindow.xib295848534#295848534#0(84"Couldn't open shared capabilities memory GSCapabilities (No such file or directory)0(0#0#50"/Users/ilikekjw/Documents/XCode/Pie/MainWindow.xib4300911832#469"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/Pie.app/MainWindow.nib /Users/ilikekjw/Documents/XCode/Pie/MainWindow.xib0#
 
 CCompileXIB /Users/ilikekjw/Documents/XCode/Pie/PieViewController.xib
-s295672342.859691
-e295672343.980952
+s295848656.754957
+e295848657.532601
 r1
 xCompileXIB
 x/Users/ilikekjw/Documents/XCode/Pie/PieViewController.xib
-lSLF07#2@32"CompileXIB PieViewController.xib295672342#295672343#0(0"0(0#0#57"/Users/ilikekjw/Documents/XCode/Pie/PieViewController.xib4300911832#483"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/Pie.app/PieViewController.nib /Users/ilikekjw/Documents/XCode/Pie/PieViewController.xib0#
+lSLF07#2@32"CompileXIB PieViewController.xib295848656#295848657#0(0"0(0#0#57"/Users/ilikekjw/Documents/XCode/Pie/PieViewController.xib4300911832#483"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/Pie.app/PieViewController.nib /Users/ilikekjw/Documents/XCode/Pie/PieViewController.xib0#
 
 CCpResource build/Debug-iphonesimulator/Pie.app/Default.png Default.png
 s295260533.627494
@@ -724,23 +777,23 @@ xpie.png
 lSLF07#2@12"Copy pie.png295255225#295255225#0(0"0(0#0#43"/Users/ilikekjw/Documents/XCode/Pie/pie.png4300911832#438"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/ilikekjw/Documents/XCode/Pie/pie.png /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/Pie.app0#
 
 CGenerateDSYMFile /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/Pie.app.dSYM /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/Pie.app/Pie
-s295672265.691281
-e295672265.718381
+s295906510.687594
+e295906510.721999
 r1
 xGenerateDSYMFile
 x/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/Pie.app.dSYM
 x/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/Pie.app/Pie
-lSLF07#2@97"GenerateDSYMFile build/Debug-iphonesimulator/Pie.app.dSYM build/Debug-iphonesimulator/Pie.app/Pie295672265#295672265#0(0"0(0#0#75"/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/Pie.app/Pie4300911832#362"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/Pie.app/Pie -o /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/Pie.app.dSYM0#
+lSLF07#2@97"GenerateDSYMFile build/Debug-iphonesimulator/Pie.app.dSYM build/Debug-iphonesimulator/Pie.app/Pie295906510#295906510#0(0"0(0#0#75"/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/Pie.app/Pie4300911832#362"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/Pie.app/Pie -o /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/Pie.app.dSYM0#
 
 CLd /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/Pie.app/Pie normal i386
-s295672265.649035
-e295672265.691175
+s295906510.650009
+e295906510.687491
 r1
 xLd
 x/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/Pie.app/Pie
 xnormal
 xi386
-lSLF07#2@80"Link /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/Pie.app/Pie295672265#295672265#0(0"0(0#0#0"4300911832#850"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/g++-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -L/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator -F/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator -filelist /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Objects-normal/i386/Pie.LinkFileList -mmacosx-version-min=10.5 -framework Foundation -framework UIKit -framework CoreGraphics -framework CFNetwork -o /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/Pie.app/Pie0#
+lSLF07#2@80"Link /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/Pie.app/Pie295906510#295906510#0(0"0(0#0#0"4300911832#850"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/g++-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -L/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator -F/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator -filelist /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Objects-normal/i386/Pie.LinkFileList -mmacosx-version-min=10.5 -framework Foundation -framework UIKit -framework CoreGraphics -framework CFNetwork -o /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/Pie.app/Pie0#
 
 CProcessInfoPlistFile /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/Pie.app/Info.plist Pie-Info.plist
 s295321884.623579
@@ -791,10 +844,10 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@25"Precompile Pie_Prefix.pch295236667#295236669#0(0"0(0#0#50"/Users/ilikekjw/Documents/XCode/Pie/Pie_Prefix.pch3419202321905706496#1666"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c++-header -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-generated-files.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-own-target-headers.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-all-target-headers.hmap -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/Pie-project-headers.hmap -F/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator -I/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/include -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/DerivedSources/i386 -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphonesimulator/Pie.build/DerivedSources -c /Users/ilikekjw/Documents/XCode/Pie/Pie_Prefix.pch -o /var/folders/-X/-XnNqKtMHQu-amOp+qZWV++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-fakvhhudzfmkbeesahhksayeysds/Pie_Prefix.pch.gch0#
 
 CTouch /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/Pie.app
-s295672343.981940
-e295672343.984718
+s295906510.722090
+e295906510.724682
 r1
 xTouch
 x/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/Pie.app
-lSLF07#2@77"Touch /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/Pie.app295672343#295672343#0(0"0(0#0#0"4300911832#268"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/Pie.app0#
+lSLF07#2@77"Touch /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/Pie.app295906510#295906510#0(0"0(0#0#0"4300911832#268"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphonesimulator/Pie.app0#
 
