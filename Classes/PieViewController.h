@@ -23,6 +23,7 @@
 
 - (BOOL)handleTextFieldChanged:(NSNotification *)notification;
 - (void)sendKey:(int)key;
+- (void)sendString:(NSString *)str;
 - (void)disconnect;
 - (IBAction)restart;
 

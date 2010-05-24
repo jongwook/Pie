@@ -70,7 +70,7 @@
 			int k=(field.text.length>0)?[field.text characterAtIndex:0]:0x20;
 			if(k!=0x20) {
 				NSLog(@"Korean Input(1) : %C, %04X", k, (int)k);
-				[self sendKey:k];
+				[self sendString:[field.text substringWithRange:NSMakeRange(0, 1)]];
 			}
 			[field setText:@" "];
 			NSLog(@"Normal Input : %@, %04X", str,c);
@@ -87,7 +87,7 @@
 		unichar c=[textField.text characterAtIndex:0];
 		if (c!=0x20) {
 			NSLog(@"Korean Input(2) : %C, %04X", c, (int)c);
-			[self sendKey:c];
+			[self sendString:[textField.text substringWithRange:NSMakeRange(0, 1)]];
 		}
 		[textField setText:[textField.text substringFromIndex:1]];
 	}
@@ -126,8 +126,12 @@
 		[pie send:"\r\n"];
 	} else if(key<0x80) {
 		[pie send:(char *)&key length:1];
-	}
-	
+	} 
+}
+
+- (void)sendString:(NSString *)str {
+	const char *cstr=[str cStringUsingEncoding:pie.encoding];
+	[pie send:cstr length:strlen(cstr)];
 }
 
 - (void)disconnect {

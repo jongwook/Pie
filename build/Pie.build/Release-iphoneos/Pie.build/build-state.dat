@@ -1,7 +1,7 @@
 TPie
 v7
 r0
-t295907973.597354
+t296073950.290965
 cCheck dependencies
 cCpResource build/Release-iphoneos/Pie.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/ResourceRules.plist
 cProcessInfoPlistFile /Users/ilikekjw/Documents/XCode/Pie/build/Release-iphoneos/Pie.app/Info.plist Pie-Info.plist
@@ -406,7 +406,7 @@ t2
 s0
 
 N/Users/ilikekjw/Documents/XCode/Pie/build/Release-iphoneos/Pie.app
-t1274215173
+t1274381106
 s510
 
 N/Users/ilikekjw/Documents/XCode/Pie/build/Release-iphoneos/Pie.app.dSYM
@@ -427,7 +427,7 @@ s1500
 
 N/Users/ilikekjw/Documents/XCode/Pie/build/Release-iphoneos/Pie.app/Pie
 t1274215173
-s114236
+s120512
 
 N/Users/ilikekjw/Documents/XCode/Pie/build/Release-iphoneos/Pie.app/PieConnectView.nib
 t1274215169
@@ -514,15 +514,16 @@ s925
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies295907968#295907968#0(0"0(0#1#0"4300911832#0"0#
+lSLF07#2@18"Check dependencies296073950#296073950#0(0"0(0#1#0"4300911832#0"0#
 
 CCodeSign /Users/ilikekjw/Documents/XCode/Pie/build/Release-iphoneos/Pie.app
-s295907973.423230
-e295907973.574569
+s296073904.154195
+e296073906.619431
 r1
 xCodeSign
 x/Users/ilikekjw/Documents/XCode/Pie/build/Release-iphoneos/Pie.app
-lSLF07#2@39"CodeSign build/Release-iphoneos/Pie.app295907973#295907973#0(0"0(0#0#66"/Users/ilikekjw/Documents/XCode/Pie/build/Release-iphoneos/Pie.app4300911832#632"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv IGNORE_CODESIGN_ALLOCATE_RADAR_7181968 /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign -f -s "iPhone Distribution: Jong Wook Kim" --resource-rules=/Users/ilikekjw/Documents/XCode/Pie/build/Release-iphoneos/Pie.app/ResourceRules.plist --entitlements /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Release-iphoneos/Pie.build/Pie.xcent /Users/ilikekjw/Documents/XCode/Pie/build/Release-iphoneos/Pie.app0#
+o/Users/ilikekjw/Documents/XCode/Pie/build/Release-iphoneos/Pie.app: replacing existing signature
+lSLF07#2@39"CodeSign build/Release-iphoneos/Pie.app296073904#296073906#0(97"/Users/ilikekjw/Documents/XCode/Pie/build/Release-iphoneos/Pie.app: replacing existing signature0(0#0#66"/Users/ilikekjw/Documents/XCode/Pie/build/Release-iphoneos/Pie.app4300911832#632"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv IGNORE_CODESIGN_ALLOCATE_RADAR_7181968 /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign -f -s "iPhone Distribution: Jong Wook Kim" --resource-rules=/Users/ilikekjw/Documents/XCode/Pie/build/Release-iphoneos/Pie.app/ResourceRules.plist --entitlements /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Release-iphoneos/Pie.build/Pie.xcent /Users/ilikekjw/Documents/XCode/Pie/build/Release-iphoneos/Pie.app0#
 
 CCompileC build/Pie.build/Release-iphoneos/Pie.build/Objects-normal/armv6/AsyncSocket.o /Users/ilikekjw/Documents/XCode/Pie/Classes/AsyncSocket.m normal armv6 objective-c com.apple.compilers.gcc.4_2
 s295907970.632379
@@ -834,10 +835,10 @@ x/Users/ilikekjw/Documents/XCode/Pie/build/Release-iphoneos/Pie.app
 lSLF07#2@72"Touch /Users/ilikekjw/Documents/XCode/Pie/build/Release-iphoneos/Pie.app295907973#295907973#0(0"0(0#0#0"4300911832#256"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/ilikekjw/Documents/XCode/Pie/build/Release-iphoneos/Pie.app0#
 
 CValidate /Users/ilikekjw/Documents/XCode/Pie/build/Release-iphoneos/Pie.app
-s295907973.574659
-e295907973.597300
+s296073950.159929
+e296073950.290912
 r1
 xValidate
 x/Users/ilikekjw/Documents/XCode/Pie/build/Release-iphoneos/Pie.app
-lSLF07#2@39"Validate build/Release-iphoneos/Pie.app295907973#295907973#0(0"0(0#0#66"/Users/ilikekjw/Documents/XCode/Pie/build/Release-iphoneos/Pie.app4300911832#365"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv PRODUCT_TYPE com.apple.product-type.application    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/Validation /Users/ilikekjw/Documents/XCode/Pie/build/Release-iphoneos/Pie.app0#
+lSLF07#2@39"Validate build/Release-iphoneos/Pie.app296073950#296073950#0(0"0(0#0#66"/Users/ilikekjw/Documents/XCode/Pie/build/Release-iphoneos/Pie.app4300911832#365"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv PRODUCT_TYPE com.apple.product-type.application    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/Validation /Users/ilikekjw/Documents/XCode/Pie/build/Release-iphoneos/Pie.app0#
 

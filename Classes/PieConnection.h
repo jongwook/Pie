@@ -29,8 +29,10 @@
 	int currentForeground, currentBackground;
 	BOOL reversed;
 	int pos;
+	int stage;	// 0:notconnected 1:negotiating 2:connected
 }
 
+@property (readonly,assign) NSStringEncoding encoding;
 @property (readonly,assign) unichar *screen;
 @property (readonly,assign) int *foreground;
 @property (readonly,assign) int *background;

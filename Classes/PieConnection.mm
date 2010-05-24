@@ -18,7 +18,7 @@ static int bufferlen=0;
 
 @implementation PieConnection
 
-@synthesize pieView, viewController, currentRow, currentCol;
+@synthesize pieView, viewController, currentRow, currentCol, encoding;
 
 -(unichar *)screen {
 	return (unichar *)screen;
@@ -47,6 +47,7 @@ static int bufferlen=0;
 	}
 	reversed=NO;
 	pos=0;
+	stage=0;
 	return self;
 }
 
@@ -77,7 +78,8 @@ static int bufferlen=0;
 
 -(void) onSocket:(AsyncSocket *)sock didConnectToHost:(NSString *)host port:(UInt16)port {
 	NSLog(@"Connected to the host!");
-	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+	//[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+	stage=1;
 	[self send:"\xff\xfb\x1f"];
 	[self send:"\xff\xfb\x20"];
 	[self send:"\xff\xfb\x18"];
@@ -97,9 +99,10 @@ static int bufferlen=0;
 		buffer.write(buf,len);
 		bufferlen+=len;
 	}
-	if(bufferlen<10) {
+	if(bufferlen<0) {
 		for(int i=0;i<bufferlen;i++) {
 			int c=buffer.get();
+			if(c<0x80) printf("%c",c);
 			printf("%02x ",c);
 			buffer.write((char *)&c,1);
 		}
@@ -111,7 +114,7 @@ static int bufferlen=0;
 }
 
 -(void) onSocket:(AsyncSocket *)sock didWriteDataWithTag:(long)tag {
-	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+	
 }
 
 -(void) parse {
@@ -124,6 +127,10 @@ static int bufferlen=0;
 			token[pos++]=[self getchar];
 		}
 		cursor++;
+		if(token[0]!='\xff') {	// negotiation ended
+			stage=2;
+			[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+		}
 		if(token[0]=='\xff') {	// negotiation
 			if(pos==cursor) {
 				if(bufferlen==0) return;	// required data is not availbe; stop parsing
@@ -264,17 +271,17 @@ static int bufferlen=0;
 				}
 				if(done) {
 					token[pos]='\0';
-					NSLog(@"Escape sequence : ^%s",&token[1]);
+					//NSLog(@"Escape sequence : ^%s",&token[1]);
 					break;
 				}
 			}
 		} else if (token[0]=='\n') {
 			[self newline];
-			printf("\n");
+			//printf("\n");
 		} else if (token[0]=='\r') {
 			currentCol=0;
 		} else if (token[0]>=0x20) {
-			printf("%c",token[0]);
+			//printf("%c",token[0]);
 			[self drawChar:token[0]];
 		}
 		cursor=pos=0;
@@ -386,10 +393,9 @@ static int bufferlen=0;
 
 -(void) send:(const char *)token length:(int)length {
 	NSLog(@"Sending token length %d",length);
-	for(int i=0;i<length;i++) {
-		printf("%02x ",(UInt8)token[i]);
-	}
-	printf("\n");
+	//for(int i=0;i<length;i++)
+	//	printf("%02x ",(UInt8)token[i]);
+	//printf("\n");
 	NSData *data=[NSData dataWithBytes:token length:length];
 	[socket writeData:data withTimeout:-1 tag:1234L];
 	[UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
@@ -397,6 +403,7 @@ static int bufferlen=0;
 
 -(void) drawChar:(unichar)c {
 	unichar prev=screen[currentRow][currentCol];
+	/*
 	if(c=='\b') {	// backspace
 		if(currentCol!=0) {
 			currentCol--;
@@ -411,6 +418,7 @@ static int bufferlen=0;
 			screen[currentRow][currentCol-1]='?';
 		}
 	}
+	*/
 	foreground[currentRow][currentCol]=currentForeground;
 	background[currentRow][currentCol]=currentBackground;
 	if(prev<0x80) {
@@ -429,10 +437,19 @@ static int bufferlen=0;
 			currentCol+=2;
 		}
 	} else {
-		screen[currentRow][currentCol]=c;
-		foreground[currentRow][currentCol+1]=currentForeground;
-		background[currentRow][currentCol+1]=currentBackground;
-		currentCol+=2;
+		if(c<0x80) {
+			screen[currentRow][currentCol]=c;
+			screen[currentRow][currentCol+1]=' ';
+			foreground[currentRow][currentCol+1]=currentForeground;
+			background[currentRow][currentCol+1]=currentBackground;
+			currentCol++;
+		} else {
+			screen[currentRow][currentCol]=c;
+			screen[currentRow][currentCol+1]=' ';
+			foreground[currentRow][currentCol+1]=currentForeground;
+			background[currentRow][currentCol+1]=currentBackground;
+			currentCol+=2;
+		}
 	}
 	
 	//NSLog(@"drawChar(%02x) - (%d,%d)",c,currentRow,currentCol);
