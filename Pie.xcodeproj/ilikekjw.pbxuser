@@ -39,7 +39,7 @@
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeExecutable = EA0B96711198DC7000E7ACCD /* Pie */;
-		activeSDKPreference = iphoneos3.0;
+		activeSDKPreference = iphonesimulator3.0;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* Pie */;
 		addToTargets = (
 			1D6058900D05DD3D006BFB54 /* Pie */,
@@ -119,8 +119,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 296424893;
-			PBXWorkspaceStateSaveDate = 296424893;
+			PBXPerProjectTemplateStateSaveDate = 296450647;
+			PBXWorkspaceStateSaveDate = 296450647;
 		};
 		perUserProjectItems = {
 			EA04431211A0CF6100FB6072 /* PBXTextBookmark */ = EA04431211A0CF6100FB6072 /* PBXTextBookmark */;
@@ -131,8 +131,8 @@
 			EA0A143111AB308E00677E90 /* PBXTextBookmark */ = EA0A143111AB308E00677E90 /* PBXTextBookmark */;
 			EA0A144B11AB31F600677E90 /* PBXTextBookmark */ = EA0A144B11AB31F600677E90 /* PBXTextBookmark */;
 			EA0A145111AB329D00677E90 /* PBXTextBookmark */ = EA0A145111AB329D00677E90 /* PBXTextBookmark */;
-			EA0A145211AB329D00677E90 /* PBXTextBookmark */ = EA0A145211AB329D00677E90 /* PBXTextBookmark */;
-			EA0A145411AB329F00677E90 /* PBXTextBookmark */ = EA0A145411AB329F00677E90 /* PBXTextBookmark */;
+			EA0A14A211AB7A2F00677E90 /* PBXTextBookmark */ = EA0A14A211AB7A2F00677E90 /* PBXTextBookmark */;
+			EA0A14A911AB7A9100677E90 /* PBXTextBookmark */ = EA0A14A911AB7A9100677E90 /* PBXTextBookmark */;
 			EA1718A9119FA567003EA21B /* PBXTextBookmark */ = EA1718A9119FA567003EA21B /* PBXTextBookmark */;
 			EA1718AE119FA567003EA21B /* PBXTextBookmark */ = EA1718AE119FA567003EA21B /* PBXTextBookmark */;
 			EA69332511A20CC600D37EC1 /* PBXBookmark */ = EA69332511A20CC600D37EC1 /* PBXBookmark */;
@@ -270,25 +270,25 @@
 		vrLen = 1259;
 		vrLoc = 963;
 	};
-	EA0A145211AB329D00677E90 /* PBXTextBookmark */ = {
+	EA0A14A211AB7A2F00677E90 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = EAB93CDA1199DF12004EB76F /* PieConnection.mm */;
-		name = "PieConnection.mm: 21";
+		name = "PieConnection.mm: 180";
 		rLen = 0;
-		rLoc = 412;
+		rLoc = 4296;
 		rType = 0;
-		vrLen = 849;
-		vrLoc = 0;
+		vrLen = 1068;
+		vrLoc = 3798;
 	};
-	EA0A145411AB329F00677E90 /* PBXTextBookmark */ = {
+	EA0A14A911AB7A9100677E90 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = EAB93CDA1199DF12004EB76F /* PieConnection.mm */;
-		name = "PieConnection.mm: 96";
+		name = "PieConnection.mm: 311";
 		rLen = 0;
-		rLoc = 2223;
+		rLoc = 7522;
 		rType = 0;
-		vrLen = 1015;
-		vrLoc = 1805;
+		vrLen = 969;
+		vrLoc = 8737;
 	};
 	EA0B96711198DC7000E7ACCD /* Pie */ = {
 		isa = PBXExecutable;
@@ -449,9 +449,9 @@
 	};
 	EAB93CDA1199DF12004EB76F /* PieConnection.mm */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {836, 6266}}";
-			sepNavSelRange = "{2223, 0}";
-			sepNavVisRange = "{1805, 1015}";
+			sepNavIntBoundsRect = "{{0, 0}, {836, 6682}}";
+			sepNavSelRange = "{7522, 0}";
+			sepNavVisRange = "{8737, 969}";
 			sepNavWindowFrame = "{{15, 143}, {631, 880}}";
 		};
 	};

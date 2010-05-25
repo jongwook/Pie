@@ -16,6 +16,19 @@
 static std::stringstream buffer;
 static int bufferlen=0;
 
+BOOL isCP949(unsigned char a, unsigned char b) {
+	if(BETWEEN(a,0xA1,0xFE) && BETWEEN(b,0xA1,0xFE))
+		return true;
+	if(BETWEEN(a,0x81,0xA0) && ( BETWEEN(b,0x41,0x5A) || BETWEEN(b,0x61,0x7A) || BETWEEN(b,0x81,0xFE) ) )
+		return true;
+	if(BETWEEN(a,0xA1,0xC5) && ( BETWEEN(b,0x41,0x5A) || BETWEEN(b,0x61,0x7A) || BETWEEN(b,0x81,0xA0) ) )
+		return true;
+	if(a==0xC6 && BETWEEN(b,0x41,0x52))
+		return true;
+	return false;
+	
+}
+
 @implementation PieConnection
 
 @synthesize pieView, viewController, currentRow, currentCol, encoding;
@@ -118,7 +131,7 @@ static int bufferlen=0;
 }
 
 -(void) parse {
-	static char token[32]="";
+	static char token[64]="";
 	
 	int cursor=0;
 
@@ -167,12 +180,17 @@ static int bufferlen=0;
 		} else if(token[0]<0) {	// handle cp949 characters
 			if(pos==cursor) {
 				if(bufferlen==0) return;
-				token[pos++]=[self getchar];
+				token[pos++]=buffer.peek();
 			}
-			token[pos]='\0';
-			NSString *str=[NSString stringWithCString:token encoding:encoding];
-			unichar c=[str characterAtIndex:0];
-			[self drawChar:c];
+			if(isCP949(token[0],token[1])) {
+				token[pos]='\0';
+				NSString *str=[NSString stringWithCString:token encoding:encoding];
+				unichar c=[str characterAtIndex:0];
+				[self drawChar:c];
+				[self getchar];
+			} else {
+				[self drawChar:'?'];
+			}
 		} else if (token[0]==0x1b) { // escape character
 			if(pos==cursor) {
 				if(bufferlen==0) return;
@@ -403,7 +421,9 @@ static int bufferlen=0;
 
 -(void) drawChar:(unichar)c {
 	unichar prev=screen[currentRow][currentCol];
-	/*
+	if(c=='h' || c=='H') {
+		c='H';
+	}
 	if(c=='\b') {	// backspace
 		if(currentCol!=0) {
 			currentCol--;
@@ -418,7 +438,6 @@ static int bufferlen=0;
 			screen[currentRow][currentCol-1]='?';
 		}
 	}
-	*/
 	foreground[currentRow][currentCol]=currentForeground;
 	background[currentRow][currentCol]=currentBackground;
 	if(prev<0x80) {
