@@ -112,7 +112,7 @@ BOOL isCP949(unsigned char a, unsigned char b) {
 		buffer.write(buf,len);
 		bufferlen+=len;
 	}
-	if(bufferlen<0) {
+	if(bufferlen<1000) {
 		for(int i=0;i<bufferlen;i++) {
 			int c=buffer.get();
 			if(c<0x80) printf("%c",c);
@@ -220,10 +220,20 @@ BOOL isCP949(unsigned char a, unsigned char b) {
 					case ';':
 						cnt++;
 						break;
-					case 'H': case 'h':	// cursor position
+					case 'H': // cursor position
 						cnt++;
 						currentRow=(cnt>=1)?MAX(value[0]-1,0):0;
 						currentCol=(cnt>=2)?MAX(value[1]-1,0):0;
+						done=YES;
+						break;
+					case '?': // vt100 mode (no support yet)
+						while(token[pos-1]!='h' && token[pos-1]!='l') {
+							if(pos==cursor) {
+								if(bufferlen==0) return;
+								token[pos++]=[self getchar];
+							}
+							cursor++;
+						}
 						done=YES;
 						break;
 					case 'J': case 'j':	// erase screen
@@ -298,7 +308,11 @@ BOOL isCP949(unsigned char a, unsigned char b) {
 			//printf("\n");
 		} else if (token[0]=='\r') {
 			currentCol=0;
-		} else if (token[0]>=0x20) {
+		} else if (token[0]=='\t') {
+			do {
+				[self drawChar:' '];
+			} while (currentCol%8!=0 && currentCol<80);
+		} else if (token[0]>=0x20 || token[0]=='\b') {
 			//printf("%c",token[0]);
 			[self drawChar:token[0]];
 		}
@@ -421,16 +435,14 @@ BOOL isCP949(unsigned char a, unsigned char b) {
 
 -(void) drawChar:(unichar)c {
 	unichar prev=screen[currentRow][currentCol];
-	if(c=='h' || c=='H') {
-		c='H';
-	}
 	if(c=='\b') {	// backspace
 		if(currentCol!=0) {
 			currentCol--;
 		}
 		screen[currentRow][currentCol]=' ';
 		foreground[currentRow][currentCol]=-1;
-		background[currentRow][currentCol]=-2;		
+		background[currentRow][currentCol]=-2;
+		return;
 	}
 	if(currentCol>0) {
 		unichar left=screen[currentRow][currentCol-1];
