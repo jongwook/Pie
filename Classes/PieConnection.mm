@@ -103,16 +103,11 @@ BOOL isCP949(unsigned char a, unsigned char b) {
 	[sock readDataWithTimeout:-1 tag:4321L];
 }
 
--(void) onSocket:(AsyncSocket *)sock didReadData:(NSData *)data withTag:(long)tag {
-	static char buf[512];
+-(void) onSocket:(AsyncSocket *)sock didReadData:(NSData *)data withTag:(long)tag { 
 	NSLog(@"Received Data length : %d",data.length);
-	for(int i=0;i<=(data.length-1)/512;i++) {
-		int len=MIN((i+1)*512,data.length) - i*512;
-		[data getBytes:buf range:NSMakeRange(i*512,i*512+len)];
-		buffer.write(buf,len);
-		bufferlen+=len;
-	}
-	if(bufferlen<1000) {
+	buffer.write((const char *)[data bytes],data.length);
+	bufferlen+=data.length;
+	if(bufferlen<0) {
 		for(int i=0;i<bufferlen;i++) {
 			int c=buffer.get();
 			if(c<0x80) printf("%c",c);
