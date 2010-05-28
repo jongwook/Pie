@@ -81,6 +81,7 @@ BOOL isCP949(unsigned char a, unsigned char b) {
 }
 
 -(void) onSocketDidDisconnect:(AsyncSocket *)sock {
+	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 	[viewController disconnect];
 	NSLog(@"Socket Disconnected");
 }
