@@ -1,31 +1,42 @@
 TPie
 v7
 r0
-t296533851.810423
+t310969976.701033
 cCheck dependencies
-cCpResource build/Debug-iphoneos/Pie.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/ResourceRules.plist
-cProcessInfoPlistFile /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/Info.plist Pie-Info.plist
-cCompileXIB /Users/ilikekjw/Documents/XCode/Pie/MainWindow.xib
-cCompileXIB /Users/ilikekjw/Documents/XCode/Pie/PieViewController.xib
-cCopyPNGFile /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/pie.png pie.png
-cCopyPNGFile /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/Default.png Default.png
-cCopyPNGFile /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/icon57.png icon57.png
-cCompileXIB /Users/ilikekjw/Documents/XCode/Pie/Classes/PieConnectView.xib
-cProcessPCH /var/folders/-X/-XnNqKtMHQu-amOp+qZWV++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-cmnubuvsljrlbwchcswwgaacvlwt/Pie_Prefix.pch.gch Pie_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
-cProcessPCH++ /var/folders/-X/-XnNqKtMHQu-amOp+qZWV++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-cphwvkijqhesxggncgrtfdjbyefg/Pie_Prefix.pch.gch Pie_Prefix.pch normal armv6 objective-c++ com.apple.compilers.gcc.4_2
-cCompileC build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/main.o /Users/ilikekjw/Documents/XCode/Pie/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieAppDelegate.o /Users/ilikekjw/Documents/XCode/Pie/Classes/PieAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieViewController.o /Users/ilikekjw/Documents/XCode/Pie/Classes/PieViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/AsyncSocket.o /Users/ilikekjw/Documents/XCode/Pie/Classes/AsyncSocket.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieView.o /Users/ilikekjw/Documents/XCode/Pie/Classes/PieView.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieConnection.o /Users/ilikekjw/Documents/XCode/Pie/Classes/PieConnection.mm normal armv6 objective-c++ com.apple.compilers.gcc.4_2
-cCompileC build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieConnectView.o /Users/ilikekjw/Documents/XCode/Pie/Classes/PieConnectView.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-cLd /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/Pie normal armv6
-cGenerateDSYMFile /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app.dSYM /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/Pie
-cProcessProductPackaging "/Users/ilikekjw/Library/MobileDevice/Provisioning Profiles/7F31DB22-AA7C-4FB1-8F00-EF12652661AA.mobileprovision" /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/embedded.mobileprovision
-cTouch /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app
-cProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/Entitlements.plist /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie.xcent
-cCodeSign /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app
+cCpResource build/Debug-iphoneos/Pie.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
+cProcessInfoPlistFile /Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/Info.plist Pie-Info.plist
+cCompileXIB /Users/jongwook/Documents/XCode/Pie/MainWindow.xib
+cCompileXIB /Users/jongwook/Documents/XCode/Pie/PieViewController.xib
+cCopyPNGFile /Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/pie.png pie.png
+cCopyPNGFile /Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/Default.png Default.png
+cCopyPNGFile /Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/icon57.png icon57.png
+cCompileXIB /Users/jongwook/Documents/XCode/Pie/Classes/PieConnectView.xib
+cProcessPCH /var/folders/7k/7kzw6LSMHtuAkWwfa9-4nU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-dwawspolaoffaxervnpzwpjvulug/Pie_Prefix.pch.gch Pie_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+cProcessPCH++ /var/folders/7k/7kzw6LSMHtuAkWwfa9-4nU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-ffpshtgquvzjdfgkwxvxdinqqxvf/Pie_Prefix.pch.gch Pie_Prefix.pch normal armv6 objective-c++ com.apple.compilers.gcc.4_2
+cProcessPCH /var/folders/7k/7kzw6LSMHtuAkWwfa9-4nU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-fzyldzvxsohuisftdxppiglotxhf/Pie_Prefix.pch.gch Pie_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+cProcessPCH++ /var/folders/7k/7kzw6LSMHtuAkWwfa9-4nU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-bncafubjrtxupiaagsntdaobyigo/Pie_Prefix.pch.gch Pie_Prefix.pch normal armv7 objective-c++ com.apple.compilers.gcc.4_2
+cCompileC build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/main.o /Users/jongwook/Documents/XCode/Pie/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieAppDelegate.o /Users/jongwook/Documents/XCode/Pie/Classes/PieAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieViewController.o /Users/jongwook/Documents/XCode/Pie/Classes/PieViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/AsyncSocket.o /Users/jongwook/Documents/XCode/Pie/Classes/AsyncSocket.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieView.o /Users/jongwook/Documents/XCode/Pie/Classes/PieView.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieConnection.o /Users/jongwook/Documents/XCode/Pie/Classes/PieConnection.mm normal armv6 objective-c++ com.apple.compilers.gcc.4_2
+cCompileC build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieConnectView.o /Users/jongwook/Documents/XCode/Pie/Classes/PieConnectView.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv7/main.o /Users/jongwook/Documents/XCode/Pie/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/Pie normal armv6
+cCompileC build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv7/PieAppDelegate.o /Users/jongwook/Documents/XCode/Pie/Classes/PieAppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv7/PieViewController.o /Users/jongwook/Documents/XCode/Pie/Classes/PieViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv7/AsyncSocket.o /Users/jongwook/Documents/XCode/Pie/Classes/AsyncSocket.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv7/PieView.o /Users/jongwook/Documents/XCode/Pie/Classes/PieView.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv7/PieConnection.o /Users/jongwook/Documents/XCode/Pie/Classes/PieConnection.mm normal armv7 objective-c++ com.apple.compilers.gcc.4_2
+cCompileC build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv7/PieConnectView.o /Users/jongwook/Documents/XCode/Pie/Classes/PieConnectView.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv7/Pie normal armv7
+cCreateUniversalBinary /Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/Pie normal "armv6 armv7"
+cGenerateDSYMFile /Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app.dSYM /Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/Pie
+cProcessProductPackaging "/Users/jongwook/Library/MobileDevice/Provisioning Profiles/D9A733BF-FF36-4F23-87E1-1AEEC163397B.mobileprovision" /Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/embedded.mobileprovision
+cTouch /Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app
+cProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie.xcent
+cCodeSign /Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app
 
 N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk
 c000000004B47D28D0000000000000110
@@ -166,6 +177,76 @@ N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk/usr/inc
 c000000004B2B49EE0000000000005660
 t1261128174
 s22112
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk
+c000000004CC7DC9E0000000000000110
+t1288166558
+s272
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist
+c000000004CB3DFCF00000000000001A7
+t1286856655
+s423
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
+c000000004CB3DFCF00000000000001E5
+t1286856655
+s485
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+c000000004CC10EEE00000000002C9710
+t1287720686
+s2922256
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFNetwork.h
+c000000004CC10EAD00000000000004CF
+t1287720621
+s1231
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004CC10EF500000000003532B0
+t1287720693
+s3486384
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004CC10F4700000000003E1F20
+t1287720775
+s4071200
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004CC10F1C0000000000001466
+t1287720732
+s5222
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004CC11AE60000000000000AA1
+t1287723750
+s2721
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004CC11B750000000000C769F0
+t1287723893
+s13068784
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/arpa/inet.h
+c000000004CB3E4790000000000001533
+t1286857849
+s5427
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/netdb.h
+c000000004CB3E4A0000000000000307F
+t1286857888
+s12415
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/netinet/in.h
+c000000004CBFACDD0000000000005462
+t1287630045
+s21602
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/sys/socket.h
+c000000004CBFACD80000000000005A69
+t1287630040
+s23145
 
 N/Users/ilikekjw/Documents/XCode/Pie/Classes/AsyncSocket.h
 c000000004BE8D57E000000000000724F
@@ -455,6 +536,272 @@ c000000004BFB38030000000000001C78
 t1274755075
 s7288
 
+N/Users/jongwook/Documents/XCode/Pie/Classes/AsyncSocket.h
+c000000004CD61F74000000000000724F
+t1289101172
+s29263
+i<Foundation/Foundation.h>
+
+N/Users/jongwook/Documents/XCode/Pie/Classes/AsyncSocket.m
+c000000004CD61F74000000000001B541
+t1289101172
+s111937
+i"AsyncSocket.h"
+i<sys/socket.h>
+i<netinet/in.h>
+i<arpa/inet.h>
+i<netdb.h>
+i<CFNetwork/CFNetwork.h>
+
+N/Users/jongwook/Documents/XCode/Pie/Classes/PieAppDelegate.h
+c000000004CD61F7400000000000002C1
+t1289101172
+s705
+i<UIKit/UIKit.h>
+i"PieConnection.h"
+
+N/Users/jongwook/Documents/XCode/Pie/Classes/PieAppDelegate.m
+c000000004CD61F740000000000000621
+t1289101172
+s1569
+i"PieAppDelegate.h"
+i"PieViewController.h"
+i"PieConnectView.h"
+
+N/Users/jongwook/Documents/XCode/Pie/Classes/PieConnectView.h
+c000000004CD61F740000000000000210
+t1289101172
+s528
+i<UIKit/UIKit.h>
+i"PieAppDelegate.h"
+
+N/Users/jongwook/Documents/XCode/Pie/Classes/PieConnectView.m
+c000000004CD61F7400000000000004B6
+t1289101172
+s1206
+i"PieConnectView.h"
+
+N/Users/jongwook/Documents/XCode/Pie/Classes/PieConnectView.xib
+c000000004CD61F740000000000005FCA
+t1289101172
+s24522
+
+N/Users/jongwook/Documents/XCode/Pie/Classes/PieConnection.h
+c000000004CD61F740000000000000704
+t1289101172
+s1796
+i<UIKit/UIKit.h>
+i"AsyncSocket.h"
+
+N/Users/jongwook/Documents/XCode/Pie/Classes/PieConnection.mm
+c000000004CD61F740000000000002FEC
+t1289101172
+s12268
+i<sstream>
+i"PieConnection.h"
+i"PieView.h"
+
+N/Users/jongwook/Documents/XCode/Pie/Classes/PieView.h
+c000000004CD61F7400000000000001EC
+t1289101172
+s492
+i<UIKit/UIKit.h>
+i"PieAppDelegate.h"
+
+N/Users/jongwook/Documents/XCode/Pie/Classes/PieView.m
+c000000004CD8835E000000000000087E
+t1289257822
+s2174
+i"PieView.h"
+i"PieConnection.h"
+
+N/Users/jongwook/Documents/XCode/Pie/Classes/PieViewController.h
+c000000004CD61F7400000000000003E8
+t1289101172
+s1000
+i<UIKit/UIKit.h>
+i"PieView.h"
+i"PieConnection.h"
+
+N/Users/jongwook/Documents/XCode/Pie/Classes/PieViewController.m
+c000000004CD61F740000000000000F0E
+t1289101172
+s3854
+i"PieViewController.h"
+
+N/Users/jongwook/Documents/XCode/Pie/Default.png
+c000000004CD61F740000000000017378
+t1289101172
+s95096
+
+N/Users/jongwook/Documents/XCode/Pie/MainWindow.xib
+c000000004CD61F74000000000000562F
+t1289101172
+s22063
+
+N/Users/jongwook/Documents/XCode/Pie/PieViewController.xib
+c000000004CD61F74000000000000740E
+t1289101172
+s29710
+
+N/Users/jongwook/Documents/XCode/Pie/Pie_Prefix.pch
+c000000004CD61F7400000000000000AF
+t1289101172
+s175
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app
+t1289277176
+s510
+
+N/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app.dSYM
+t1289277174
+s102
+
+N/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/Default.png
+t1289101172
+s96048
+
+N/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/Info.plist
+t1289101172
+s727
+
+N/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/MainWindow.nib
+t1289101172
+s1500
+
+N/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/Pie
+t1289277174
+s314132
+
+N/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/PieConnectView.nib
+t1289101172
+s3972
+
+N/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/PieViewController.nib
+t1289101172
+s4178
+
+N/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/PkgInfo
+t1289101172
+s8
+
+N/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/ResourceRules.plist
+t1289101172
+s485
+
+N/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/embedded.mobileprovision
+t1289277174
+s7348
+
+N/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/icon57.png
+t1289101172
+s5305
+
+N/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/pie.png
+t1289101172
+s122149
+
+N/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/AsyncSocket.o
+t1289277173
+s191272
+
+N/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/Pie
+t1289277173
+s159008
+
+N/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/Pie.LinkFileList
+c000000004CD8CEF00000000000000313
+t1289277168
+s787
+
+N/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieAppDelegate.o
+t1289277172
+s56716
+
+N/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieConnectView.o
+t1289277173
+s53444
+
+N/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieConnection.o
+t1289277173
+s145996
+
+N/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieView.o
+t1289277172
+s48736
+
+N/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieViewController.o
+t1289277172
+s62308
+
+N/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/main.o
+t1289277172
+s6440
+
+N/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv7/AsyncSocket.o
+t1289277174
+s183084
+
+N/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv7/Pie
+t1289277174
+s150292
+
+N/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv7/Pie.LinkFileList
+c000000004CD8CEF00000000000000313
+t1289277168
+s787
+
+N/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv7/PieAppDelegate.o
+t1289277173
+s56548
+
+N/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv7/PieConnectView.o
+t1289277174
+s53292
+
+N/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv7/PieConnection.o
+t1289277174
+s143532
+
+N/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv7/PieView.o
+t1289277173
+s48316
+
+N/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv7/PieViewController.o
+t1289277173
+s61856
+
+N/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv7/main.o
+t1289277173
+s6424
+
+N/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie.xcent
+t1289101172
+s313
+
+N/Users/jongwook/Documents/XCode/Pie/icon57.png
+c000000004CD61F7400000000000012B2
+t1289101172
+s4786
+
+N/Users/jongwook/Documents/XCode/Pie/main.m
+c000000004CD61F740000000000000166
+t1289101172
+s358
+i<UIKit/UIKit.h>
+
+N/Users/jongwook/Documents/XCode/Pie/pie.png
+c000000004CD61F740000000000026173
+t1289101172
+s156019
+
+N/Users/jongwook/Library/MobileDevice/Provisioning Profiles/D9A733BF-FF36-4F23-87E1-1AEEC163397B.mobileprovision
+c000000004CD8CB9B0000000000001CB4
+t1289276315
+s7348
+
 N/var/folders/-X/-XnNqKtMHQu-amOp+qZWV++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-cmnubuvsljrlbwchcswwgaacvlwt/Pie_Prefix.pch.gch
 t1274825904
 s8339584
@@ -471,14 +818,30 @@ N/var/folders/-X/-XnNqKtMHQu-amOp+qZWV++++TI/-Caches-/com.apple.Xcode.501/Shared
 t1273566365
 s8966300
 
+N/var/folders/7k/7kzw6LSMHtuAkWwfa9-4nU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-bncafubjrtxupiaagsntdaobyigo/Pie_Prefix.pch.gch
+t1289277172
+s11048552
+
+N/var/folders/7k/7kzw6LSMHtuAkWwfa9-4nU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-dwawspolaoffaxervnpzwpjvulug/Pie_Prefix.pch.gch
+t1289277169
+s9983704
+
+N/var/folders/7k/7kzw6LSMHtuAkWwfa9-4nU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-ffpshtgquvzjdfgkwxvxdinqqxvf/Pie_Prefix.pch.gch
+t1289277170
+s10585704
+
+N/var/folders/7k/7kzw6LSMHtuAkWwfa9-4nU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-fzyldzvxsohuisftdxppiglotxhf/Pie_Prefix.pch.gch
+t1289277171
+s10446552
+
 NPie-Info.plist
-c000000004BEA099C000000000000039D
-t1273629084
+c000000004CD61F74000000000000039D
+t1289101172
 s925
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies296533848#296533848#0(0"0(0#1#0"4300911832#0"0#
+lSLF07#2@18"Check dependencies310969968#310969968#0(0"0(0#1#0"8609945728#0"0#
 
 CCodeSign /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app
 s296533849.471040
@@ -487,6 +850,14 @@ r1
 xCodeSign
 x/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app
 lSLF07#2@37"CodeSign build/Debug-iphoneos/Pie.app296533849#296533851#0(0"0(0#0#64"/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app4300911832#636"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv IGNORE_CODESIGN_ALLOCATE_RADAR_7181968 /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign -f -s "iPhone Developer: Jong Wook Kim (47993FRT34)" --resource-rules=/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/ResourceRules.plist --entitlements /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie.xcent /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app0#
+
+CCodeSign /Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app
+s310969974.459102
+e310969976.700894
+r1
+xCodeSign
+x/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app
+lSLF07#2@37"CodeSign build/Debug-iphoneos/Pie.app310969974#310969976#0(0"0(0#0#64"/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app8609972192#617"    cd /Users/jongwook/Documents/XCode/Pie    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: Jong Wook Kim (47993FRT34)" --resource-rules=/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/ResourceRules.plist --entitlements /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie.xcent /Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app0#
 
 CCompileC build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/AsyncSocket.o /Users/ilikekjw/Documents/XCode/Pie/Classes/AsyncSocket.m normal armv6 objective-c com.apple.compilers.gcc.4_2
 s296518705.763015
@@ -501,6 +872,19 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@65"Compile /Users/ilikekjw/Documents/XCode/Pie/Classes/AsyncSocket.m296518705#296518707#0(0"0(0#0#57"/Users/ilikekjw/Documents/XCode/Pie/Classes/AsyncSocket.m4300911832#1633"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-generated-files.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-own-target-headers.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-all-target-headers.hmap -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-project-headers.hmap -F/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos -I/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/include -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources/armv6 -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources -include /var/folders/-X/-XnNqKtMHQu-amOp+qZWV++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-cmnubuvsljrlbwchcswwgaacvlwt/Pie_Prefix.pch -c /Users/ilikekjw/Documents/XCode/Pie/Classes/AsyncSocket.m -o /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/AsyncSocket.o0#
 
+CCompileC build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/AsyncSocket.o /Users/jongwook/Documents/XCode/Pie/Classes/AsyncSocket.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s310969972.172111
+e310969973.044135
+r1
+xCompileC
+xbuild/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/AsyncSocket.o
+x/Users/jongwook/Documents/XCode/Pie/Classes/AsyncSocket.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@65"Compile /Users/jongwook/Documents/XCode/Pie/Classes/AsyncSocket.m310969972#310969973#0(0"0(0#0#57"/Users/jongwook/Documents/XCode/Pie/Classes/AsyncSocket.m8602449184#1633"    cd /Users/jongwook/Documents/XCode/Pie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-generated-files.hmap -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-own-target-headers.hmap -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-all-target-headers.hmap -iquote /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-project-headers.hmap -F/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos -I/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/include -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources/armv6 -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources -include /var/folders/7k/7kzw6LSMHtuAkWwfa9-4nU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-dwawspolaoffaxervnpzwpjvulug/Pie_Prefix.pch -c /Users/jongwook/Documents/XCode/Pie/Classes/AsyncSocket.m -o /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/AsyncSocket.o0#
+
 CCompileC build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieAppDelegate.o /Users/ilikekjw/Documents/XCode/Pie/Classes/PieAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
 s296519071.666801
 e296519071.883574
@@ -514,6 +898,19 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@68"Compile /Users/ilikekjw/Documents/XCode/Pie/Classes/PieAppDelegate.m296519071#296519072#0(0"0(0#0#60"/Users/ilikekjw/Documents/XCode/Pie/Classes/PieAppDelegate.m4300911832#1639"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-generated-files.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-own-target-headers.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-all-target-headers.hmap -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-project-headers.hmap -F/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos -I/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/include -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources/armv6 -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources -include /var/folders/-X/-XnNqKtMHQu-amOp+qZWV++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-cmnubuvsljrlbwchcswwgaacvlwt/Pie_Prefix.pch -c /Users/ilikekjw/Documents/XCode/Pie/Classes/PieAppDelegate.m -o /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieAppDelegate.o0#
 
+CCompileC build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieAppDelegate.o /Users/jongwook/Documents/XCode/Pie/Classes/PieAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s310969972.037915
+e310969972.172015
+r1
+xCompileC
+xbuild/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieAppDelegate.o
+x/Users/jongwook/Documents/XCode/Pie/Classes/PieAppDelegate.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@68"Compile /Users/jongwook/Documents/XCode/Pie/Classes/PieAppDelegate.m310969972#310969972#0(0"0(0#0#60"/Users/jongwook/Documents/XCode/Pie/Classes/PieAppDelegate.m8610208928#1639"    cd /Users/jongwook/Documents/XCode/Pie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-generated-files.hmap -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-own-target-headers.hmap -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-all-target-headers.hmap -iquote /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-project-headers.hmap -F/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos -I/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/include -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources/armv6 -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources -include /var/folders/7k/7kzw6LSMHtuAkWwfa9-4nU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-dwawspolaoffaxervnpzwpjvulug/Pie_Prefix.pch -c /Users/jongwook/Documents/XCode/Pie/Classes/PieAppDelegate.m -o /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieAppDelegate.o0#
+
 CCompileC build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieConnectView.o /Users/ilikekjw/Documents/XCode/Pie/Classes/PieConnectView.m normal armv6 objective-c com.apple.compilers.gcc.4_2
 s296519072.100617
 e296519072.185079
@@ -526,6 +923,19 @@ xarmv6
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@68"Compile /Users/ilikekjw/Documents/XCode/Pie/Classes/PieConnectView.m296519072#296519072#0(0"0(0#0#60"/Users/ilikekjw/Documents/XCode/Pie/Classes/PieConnectView.m4300911832#1639"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-generated-files.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-own-target-headers.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-all-target-headers.hmap -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-project-headers.hmap -F/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos -I/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/include -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources/armv6 -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources -include /var/folders/-X/-XnNqKtMHQu-amOp+qZWV++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-cmnubuvsljrlbwchcswwgaacvlwt/Pie_Prefix.pch -c /Users/ilikekjw/Documents/XCode/Pie/Classes/PieConnectView.m -o /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieConnectView.o0#
+
+CCompileC build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieConnectView.o /Users/jongwook/Documents/XCode/Pie/Classes/PieConnectView.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s310969973.044235
+e310969973.164767
+r1
+xCompileC
+xbuild/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieConnectView.o
+x/Users/jongwook/Documents/XCode/Pie/Classes/PieConnectView.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@68"Compile /Users/jongwook/Documents/XCode/Pie/Classes/PieConnectView.m310969973#310969973#0(0"0(0#0#60"/Users/jongwook/Documents/XCode/Pie/Classes/PieConnectView.m8610228288#1639"    cd /Users/jongwook/Documents/XCode/Pie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-generated-files.hmap -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-own-target-headers.hmap -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-all-target-headers.hmap -iquote /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-project-headers.hmap -F/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos -I/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/include -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources/armv6 -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources -include /var/folders/7k/7kzw6LSMHtuAkWwfa9-4nU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-dwawspolaoffaxervnpzwpjvulug/Pie_Prefix.pch -c /Users/jongwook/Documents/XCode/Pie/Classes/PieConnectView.m -o /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieConnectView.o0#
 
 CCompileC build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieConnectViewController.o /Users/ilikekjw/Documents/XCode/Pie/Classes/PieConnectViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
 s295840921.212217
@@ -580,6 +990,19 @@ xobjective-c++
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@68"Compile /Users/ilikekjw/Documents/XCode/Pie/Classes/PieConnection.mm296533848#296533849#0(0"0(0#0#60"/Users/ilikekjw/Documents/XCode/Pie/Classes/PieConnection.mm4300911832#1659"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch armv6 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -fvisibility=hidden -fvisibility-inlines-hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-generated-files.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-own-target-headers.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-all-target-headers.hmap -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-project-headers.hmap -F/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos -I/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/include -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources/armv6 -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources -include /var/folders/-X/-XnNqKtMHQu-amOp+qZWV++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-cphwvkijqhesxggncgrtfdjbyefg/Pie_Prefix.pch -c /Users/ilikekjw/Documents/XCode/Pie/Classes/PieConnection.mm -o /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieConnection.o0#
 
+CCompileC build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieConnection.o /Users/jongwook/Documents/XCode/Pie/Classes/PieConnection.mm normal armv6 objective-c++ com.apple.compilers.gcc.4_2
+s310969972.362877
+e310969973.143471
+r1
+xCompileC
+xbuild/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieConnection.o
+x/Users/jongwook/Documents/XCode/Pie/Classes/PieConnection.mm
+xnormal
+xarmv6
+xobjective-c++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@68"Compile /Users/jongwook/Documents/XCode/Pie/Classes/PieConnection.mm310969972#310969973#0(0"0(0#0#60"/Users/jongwook/Documents/XCode/Pie/Classes/PieConnection.mm8610076320#1659"    cd /Users/jongwook/Documents/XCode/Pie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch armv6 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -fvisibility-inlines-hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-generated-files.hmap -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-own-target-headers.hmap -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-all-target-headers.hmap -iquote /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-project-headers.hmap -F/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos -I/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/include -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources/armv6 -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources -include /var/folders/7k/7kzw6LSMHtuAkWwfa9-4nU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-ffpshtgquvzjdfgkwxvxdinqqxvf/Pie_Prefix.pch -c /Users/jongwook/Documents/XCode/Pie/Classes/PieConnection.mm -o /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieConnection.o0#
+
 CCompileC build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieTerminal.o /Users/ilikekjw/Documents/XCode/Pie/Classes/PieTerminal.mm normal armv6 objective-c++ com.apple.compilers.gcc.4_2
 s295259166.156865
 e295259168.493270
@@ -606,6 +1029,19 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@61"Compile /Users/ilikekjw/Documents/XCode/Pie/Classes/PieView.m296519071#296519072#0(0"0(0#0#53"/Users/ilikekjw/Documents/XCode/Pie/Classes/PieView.m4300911832#1625"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-generated-files.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-own-target-headers.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-all-target-headers.hmap -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-project-headers.hmap -F/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos -I/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/include -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources/armv6 -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources -include /var/folders/-X/-XnNqKtMHQu-amOp+qZWV++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-cmnubuvsljrlbwchcswwgaacvlwt/Pie_Prefix.pch -c /Users/ilikekjw/Documents/XCode/Pie/Classes/PieView.m -o /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieView.o0#
 
+CCompileC build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieView.o /Users/jongwook/Documents/XCode/Pie/Classes/PieView.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s310969972.263949
+e310969972.362775
+r1
+xCompileC
+xbuild/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieView.o
+x/Users/jongwook/Documents/XCode/Pie/Classes/PieView.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@61"Compile /Users/jongwook/Documents/XCode/Pie/Classes/PieView.m310969972#310969972#0(0"0(0#0#53"/Users/jongwook/Documents/XCode/Pie/Classes/PieView.m8612816960#1625"    cd /Users/jongwook/Documents/XCode/Pie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-generated-files.hmap -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-own-target-headers.hmap -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-all-target-headers.hmap -iquote /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-project-headers.hmap -F/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos -I/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/include -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources/armv6 -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources -include /var/folders/7k/7kzw6LSMHtuAkWwfa9-4nU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-dwawspolaoffaxervnpzwpjvulug/Pie_Prefix.pch -c /Users/jongwook/Documents/XCode/Pie/Classes/PieView.m -o /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieView.o0#
+
 CCompileC build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieViewController.o /Users/ilikekjw/Documents/XCode/Pie/Classes/PieViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
 s296519071.668692
 e296519071.924362
@@ -618,6 +1054,19 @@ xarmv6
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@71"Compile /Users/ilikekjw/Documents/XCode/Pie/Classes/PieViewController.m296519071#296519072#0(0"0(0#0#63"/Users/ilikekjw/Documents/XCode/Pie/Classes/PieViewController.m4300911832#1645"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-generated-files.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-own-target-headers.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-all-target-headers.hmap -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-project-headers.hmap -F/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos -I/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/include -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources/armv6 -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources -include /var/folders/-X/-XnNqKtMHQu-amOp+qZWV++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-cmnubuvsljrlbwchcswwgaacvlwt/Pie_Prefix.pch -c /Users/ilikekjw/Documents/XCode/Pie/Classes/PieViewController.m -o /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieViewController.o0#
+
+CCompileC build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieViewController.o /Users/jongwook/Documents/XCode/Pie/Classes/PieViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s310969972.116451
+e310969972.263847
+r1
+xCompileC
+xbuild/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieViewController.o
+x/Users/jongwook/Documents/XCode/Pie/Classes/PieViewController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@71"Compile /Users/jongwook/Documents/XCode/Pie/Classes/PieViewController.m310969972#310969972#0(0"0(0#0#63"/Users/jongwook/Documents/XCode/Pie/Classes/PieViewController.m8610034528#1645"    cd /Users/jongwook/Documents/XCode/Pie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-generated-files.hmap -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-own-target-headers.hmap -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-all-target-headers.hmap -iquote /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-project-headers.hmap -F/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos -I/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/include -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources/armv6 -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources -include /var/folders/7k/7kzw6LSMHtuAkWwfa9-4nU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-dwawspolaoffaxervnpzwpjvulug/Pie_Prefix.pch -c /Users/jongwook/Documents/XCode/Pie/Classes/PieViewController.m -o /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/PieViewController.o0#
 
 CCompileC build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/cp949.o /Users/ilikekjw/Documents/XCode/Pie/Classes/cp949.m normal armv6 objective-c com.apple.compilers.gcc.4_2
 s295259166.069564
@@ -645,6 +1094,110 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@50"Compile /Users/ilikekjw/Documents/XCode/Pie/main.m296518705#296518705#0(0"0(0#0#42"/Users/ilikekjw/Documents/XCode/Pie/main.m4300911832#1611"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-generated-files.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-own-target-headers.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-all-target-headers.hmap -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-project-headers.hmap -F/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos -I/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/include -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources/armv6 -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources -include /var/folders/-X/-XnNqKtMHQu-amOp+qZWV++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-cmnubuvsljrlbwchcswwgaacvlwt/Pie_Prefix.pch -c /Users/ilikekjw/Documents/XCode/Pie/main.m -o /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/main.o0#
 
+CCompileC build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/main.o /Users/jongwook/Documents/XCode/Pie/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s310969972.036417
+e310969972.116345
+r1
+xCompileC
+xbuild/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/main.o
+x/Users/jongwook/Documents/XCode/Pie/main.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@50"Compile /Users/jongwook/Documents/XCode/Pie/main.m310969972#310969972#0(0"0(0#0#42"/Users/jongwook/Documents/XCode/Pie/main.m8610311104#1611"    cd /Users/jongwook/Documents/XCode/Pie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-generated-files.hmap -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-own-target-headers.hmap -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-all-target-headers.hmap -iquote /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-project-headers.hmap -F/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos -I/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/include -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources/armv6 -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources -include /var/folders/7k/7kzw6LSMHtuAkWwfa9-4nU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-dwawspolaoffaxervnpzwpjvulug/Pie_Prefix.pch -c /Users/jongwook/Documents/XCode/Pie/main.m -o /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/main.o0#
+
+CCompileC build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv7/AsyncSocket.o /Users/jongwook/Documents/XCode/Pie/Classes/AsyncSocket.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s310969973.317527
+e310969974.203289
+r1
+xCompileC
+xbuild/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv7/AsyncSocket.o
+x/Users/jongwook/Documents/XCode/Pie/Classes/AsyncSocket.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@65"Compile /Users/jongwook/Documents/XCode/Pie/Classes/AsyncSocket.m310969973#310969974#0(0"0(0#0#57"/Users/jongwook/Documents/XCode/Pie/Classes/AsyncSocket.m8609719648#1633"    cd /Users/jongwook/Documents/XCode/Pie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-generated-files.hmap -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-own-target-headers.hmap -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-all-target-headers.hmap -iquote /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-project-headers.hmap -F/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos -I/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/include -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources/armv7 -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources -include /var/folders/7k/7kzw6LSMHtuAkWwfa9-4nU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-fzyldzvxsohuisftdxppiglotxhf/Pie_Prefix.pch -c /Users/jongwook/Documents/XCode/Pie/Classes/AsyncSocket.m -o /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv7/AsyncSocket.o0#
+
+CCompileC build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv7/PieAppDelegate.o /Users/jongwook/Documents/XCode/Pie/Classes/PieAppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s310969973.207594
+e310969973.317085
+r1
+xCompileC
+xbuild/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv7/PieAppDelegate.o
+x/Users/jongwook/Documents/XCode/Pie/Classes/PieAppDelegate.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@68"Compile /Users/jongwook/Documents/XCode/Pie/Classes/PieAppDelegate.m310969973#310969973#0(0"0(0#0#60"/Users/jongwook/Documents/XCode/Pie/Classes/PieAppDelegate.m8604045984#1639"    cd /Users/jongwook/Documents/XCode/Pie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-generated-files.hmap -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-own-target-headers.hmap -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-all-target-headers.hmap -iquote /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-project-headers.hmap -F/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos -I/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/include -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources/armv7 -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources -include /var/folders/7k/7kzw6LSMHtuAkWwfa9-4nU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-fzyldzvxsohuisftdxppiglotxhf/Pie_Prefix.pch -c /Users/jongwook/Documents/XCode/Pie/Classes/PieAppDelegate.m -o /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv7/PieAppDelegate.o0#
+
+CCompileC build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv7/PieConnectView.o /Users/jongwook/Documents/XCode/Pie/Classes/PieConnectView.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s310969974.203389
+e310969974.288980
+r1
+xCompileC
+xbuild/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv7/PieConnectView.o
+x/Users/jongwook/Documents/XCode/Pie/Classes/PieConnectView.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@68"Compile /Users/jongwook/Documents/XCode/Pie/Classes/PieConnectView.m310969974#310969974#0(0"0(0#0#60"/Users/jongwook/Documents/XCode/Pie/Classes/PieConnectView.m8603814720#1639"    cd /Users/jongwook/Documents/XCode/Pie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-generated-files.hmap -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-own-target-headers.hmap -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-all-target-headers.hmap -iquote /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-project-headers.hmap -F/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos -I/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/include -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources/armv7 -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources -include /var/folders/7k/7kzw6LSMHtuAkWwfa9-4nU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-fzyldzvxsohuisftdxppiglotxhf/Pie_Prefix.pch -c /Users/jongwook/Documents/XCode/Pie/Classes/PieConnectView.m -o /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv7/PieConnectView.o0#
+
+CCompileC build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv7/PieConnection.o /Users/jongwook/Documents/XCode/Pie/Classes/PieConnection.mm normal armv7 objective-c++ com.apple.compilers.gcc.4_2
+s310969973.557717
+e310969974.219116
+r1
+xCompileC
+xbuild/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv7/PieConnection.o
+x/Users/jongwook/Documents/XCode/Pie/Classes/PieConnection.mm
+xnormal
+xarmv7
+xobjective-c++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@68"Compile /Users/jongwook/Documents/XCode/Pie/Classes/PieConnection.mm310969973#310969974#0(0"0(0#0#60"/Users/jongwook/Documents/XCode/Pie/Classes/PieConnection.mm8610146336#1659"    cd /Users/jongwook/Documents/XCode/Pie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch armv7 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -fvisibility-inlines-hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-generated-files.hmap -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-own-target-headers.hmap -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-all-target-headers.hmap -iquote /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-project-headers.hmap -F/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos -I/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/include -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources/armv7 -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources -include /var/folders/7k/7kzw6LSMHtuAkWwfa9-4nU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-bncafubjrtxupiaagsntdaobyigo/Pie_Prefix.pch -c /Users/jongwook/Documents/XCode/Pie/Classes/PieConnection.mm -o /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv7/PieConnection.o0#
+
+CCompileC build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv7/PieView.o /Users/jongwook/Documents/XCode/Pie/Classes/PieView.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s310969973.456416
+e310969973.557615
+r1
+xCompileC
+xbuild/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv7/PieView.o
+x/Users/jongwook/Documents/XCode/Pie/Classes/PieView.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@61"Compile /Users/jongwook/Documents/XCode/Pie/Classes/PieView.m310969973#310969973#0(0"0(0#0#53"/Users/jongwook/Documents/XCode/Pie/Classes/PieView.m8610466240#1625"    cd /Users/jongwook/Documents/XCode/Pie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-generated-files.hmap -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-own-target-headers.hmap -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-all-target-headers.hmap -iquote /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-project-headers.hmap -F/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos -I/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/include -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources/armv7 -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources -include /var/folders/7k/7kzw6LSMHtuAkWwfa9-4nU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-fzyldzvxsohuisftdxppiglotxhf/Pie_Prefix.pch -c /Users/jongwook/Documents/XCode/Pie/Classes/PieView.m -o /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv7/PieView.o0#
+
+CCompileC build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv7/PieViewController.o /Users/jongwook/Documents/XCode/Pie/Classes/PieViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s310969973.293907
+e310969973.456313
+r1
+xCompileC
+xbuild/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv7/PieViewController.o
+x/Users/jongwook/Documents/XCode/Pie/Classes/PieViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@71"Compile /Users/jongwook/Documents/XCode/Pie/Classes/PieViewController.m310969973#310969973#0(0"0(0#0#63"/Users/jongwook/Documents/XCode/Pie/Classes/PieViewController.m8593145056#1645"    cd /Users/jongwook/Documents/XCode/Pie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-generated-files.hmap -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-own-target-headers.hmap -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-all-target-headers.hmap -iquote /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-project-headers.hmap -F/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos -I/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/include -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources/armv7 -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources -include /var/folders/7k/7kzw6LSMHtuAkWwfa9-4nU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-fzyldzvxsohuisftdxppiglotxhf/Pie_Prefix.pch -c /Users/jongwook/Documents/XCode/Pie/Classes/PieViewController.m -o /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv7/PieViewController.o0#
+
+CCompileC build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv7/main.o /Users/jongwook/Documents/XCode/Pie/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s310969973.143568
+e310969973.207484
+r1
+xCompileC
+xbuild/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv7/main.o
+x/Users/jongwook/Documents/XCode/Pie/main.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@50"Compile /Users/jongwook/Documents/XCode/Pie/main.m310969973#310969973#0(0"0(0#0#42"/Users/jongwook/Documents/XCode/Pie/main.m8609325184#1611"    cd /Users/jongwook/Documents/XCode/Pie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-generated-files.hmap -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-own-target-headers.hmap -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-all-target-headers.hmap -iquote /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-project-headers.hmap -F/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos -I/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/include -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources/armv7 -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources -include /var/folders/7k/7kzw6LSMHtuAkWwfa9-4nU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-fzyldzvxsohuisftdxppiglotxhf/Pie_Prefix.pch -c /Users/jongwook/Documents/XCode/Pie/main.m -o /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv7/main.o0#
+
 CCompileXIB /Users/ilikekjw/Documents/XCode/Pie/Classes/PieConnectView.xib
 s296518703.156074
 e296518703.762883
@@ -670,6 +1223,15 @@ r1
 xCompileXIB
 x/Users/ilikekjw/Documents/XCode/Pie/PieViewController.xib
 lSLF07#2@32"CompileXIB PieViewController.xib296518697#296518700#0(0"0(0#0#57"/Users/ilikekjw/Documents/XCode/Pie/PieViewController.xib4300911832#467"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/PieViewController.nib /Users/ilikekjw/Documents/XCode/Pie/PieViewController.xib0#
+
+CCompileXIB /Users/jongwook/Documents/XCode/Pie/Classes/PieConnectView.xib
+r0
+
+CCompileXIB /Users/jongwook/Documents/XCode/Pie/MainWindow.xib
+r0
+
+CCompileXIB /Users/jongwook/Documents/XCode/Pie/PieViewController.xib
+r0
 
 CCopyPNGFile /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/Default.png Default.png
 s296518700.729048
@@ -698,6 +1260,15 @@ x/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/pie.png
 xpie.png
 lSLF07#2@56"CopyPNGFile build/Debug-iphoneos/Pie.app/pie.png pie.png296518700#296518703#0(0"0(0#0#43"/Users/ilikekjw/Documents/XCode/Pie/pie.png4300911832#541"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/ilikekjw/Documents/XCode/Pie/pie.png /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/pie.png0#
 
+CCopyPNGFile /Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/Default.png Default.png
+r0
+
+CCopyPNGFile /Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/icon57.png icon57.png
+r0
+
+CCopyPNGFile /Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/pie.png pie.png
+r0
+
 CCpResource build/Debug-iphoneos/Pie.app/Default Default
 r0
 
@@ -719,6 +1290,19 @@ xbuild/Debug-iphoneos/Pie.app/ResourceRules.plist
 x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk/ResourceRules.plist
 lSLF07#2@96"Copy /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk/ResourceRules.plist295259157#295259157#0(0"0(0#0#91"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk/ResourceRules.plist4923330986020728832#472"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk/ResourceRules.plist /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app0#
 
+CCpResource build/Debug-iphoneos/Pie.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
+r0
+
+CCreateUniversalBinary /Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/Pie normal "armv6 armv7"
+s310969974.363640
+e310969974.376256
+r1
+xCreateUniversalBinary
+x/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/Pie
+xnormal
+xarmv6 armv7
+lSLF07#2@75"CreateUniversalBinary build/Debug-iphoneos/Pie.app/Pie normal "armv6 armv7"310969974#310969974#0(0"0(0#0#47"/Users/jongwook/Documents/XCode/Pie/armv6 armv78612818752#474"    cd /Users/jongwook/Documents/XCode/Pie    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/lipo -create /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/Pie /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv7/Pie -output /Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/Pie0#
+
 CGenerateDSYMFile /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app.dSYM /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/Pie
 s296533849.186053
 e296533849.467965
@@ -727,6 +1311,15 @@ xGenerateDSYMFile
 x/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app.dSYM
 x/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/Pie
 lSLF07#2@83"GenerateDSYMFile build/Debug-iphoneos/Pie.app.dSYM build/Debug-iphoneos/Pie.app/Pie296533849#296533849#0(0"0(0#0#68"/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/Pie4300911832#341"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/Pie -o /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app.dSYM0#
+
+CGenerateDSYMFile /Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app.dSYM /Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/Pie
+s310969974.376355
+e310969974.451491
+r1
+xGenerateDSYMFile
+x/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app.dSYM
+x/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/Pie
+lSLF07#2@83"GenerateDSYMFile build/Debug-iphoneos/Pie.app.dSYM build/Debug-iphoneos/Pie.app/Pie310969974#310969974#0(0"0(0#0#68"/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/Pie8610886112#341"    cd /Users/jongwook/Documents/XCode/Pie    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/Pie -o /Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app.dSYM0#
 
 CLd /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/Pie normal armv6
 s296533849.016128
@@ -738,6 +1331,26 @@ xnormal
 xarmv6
 lSLF07#2@73"Link /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/Pie296533849#296533849#0(0"0(0#0#0"4300911832#808"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv IPHONEOS_DEPLOYMENT_TARGET 3.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/g++-4.2 -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -L/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos -F/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos -filelist /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/Pie.LinkFileList -dead_strip -miphoneos-version-min=3.0 -framework Foundation -framework UIKit -framework CoreGraphics -framework CFNetwork -o /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/Pie0#
 
+CLd /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/Pie normal armv6
+s310969973.164867
+e310969973.293802
+r1
+xLd
+x/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/Pie
+xnormal
+xarmv6
+lSLF07#2@106"Link /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/Pie310969973#310969973#0(0"0(0#0#0"8609161440#841"    cd /Users/jongwook/Documents/XCode/Pie    setenv IPHONEOS_DEPLOYMENT_TARGET 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/g++-4.2 -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos -F/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos -filelist /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/Pie.LinkFileList -dead_strip -miphoneos-version-min=4.2 -framework Foundation -framework UIKit -framework CoreGraphics -framework CFNetwork -o /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv6/Pie0#
+
+CLd /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv7/Pie normal armv7
+s310969974.289077
+e310969974.363526
+r1
+xLd
+x/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv7/Pie
+xnormal
+xarmv7
+lSLF07#2@106"Link /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv7/Pie310969974#310969974#0(0"0(0#0#0"8610649920#841"    cd /Users/jongwook/Documents/XCode/Pie    setenv IPHONEOS_DEPLOYMENT_TARGET 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/g++-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos -F/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos -filelist /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv7/Pie.LinkFileList -dead_strip -miphoneos-version-min=4.2 -framework Foundation -framework UIKit -framework CoreGraphics -framework CFNetwork -o /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Objects-normal/armv7/Pie0#
+
 CProcessInfoPlistFile /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/Info.plist Pie-Info.plist
 s296518697.686653
 e296518697.723378
@@ -746,6 +1359,9 @@ xProcessInfoPlistFile
 x/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/Info.plist
 xPie-Info.plist
 lSLF07#2@22"Process Pie-Info.plist296518697#296518697#0(0"0(0#0#50"/Users/ilikekjw/Documents/XCode/Pie/Pie-Info.plist4300911832#534"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Pie-Info.plist -genpkginfo /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/ResourceRules.plist -o /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/Info.plist0#
+
+CProcessInfoPlistFile /Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/Info.plist Pie-Info.plist
+r0
 
 CProcessPCH /var/folders/-X/-XnNqKtMHQu-amOp+qZWV++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-cmnubuvsljrlbwchcswwgaacvlwt/Pie_Prefix.pch.gch Pie_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
 s296518703.763019
@@ -773,6 +1389,32 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@25"Precompile Pie_Prefix.pch295259162#295259165#0(0"0(0#0#50"/Users/ilikekjw/Documents/XCode/Pie/Pie_Prefix.pch4300911832#1520"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-generated-files.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-own-target-headers.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-all-target-headers.hmap -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-project-headers.hmap -F/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos -I/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/include -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources/armv6 -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources -c /Users/ilikekjw/Documents/XCode/Pie/Pie_Prefix.pch -o /var/folders/-X/-XnNqKtMHQu-amOp+qZWV++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-dodcntligjjgaggbhjrsultgqshg/Pie_Prefix.pch.gch0#
 
+CProcessPCH /var/folders/7k/7kzw6LSMHtuAkWwfa9-4nU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-dwawspolaoffaxervnpzwpjvulug/Pie_Prefix.pch.gch Pie_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+s310969968.995421
+e310969969.983648
+r1
+xProcessPCH
+x/var/folders/7k/7kzw6LSMHtuAkWwfa9-4nU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-dwawspolaoffaxervnpzwpjvulug/Pie_Prefix.pch.gch
+xPie_Prefix.pch
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@25"Precompile Pie_Prefix.pch310969969#310969969#0(0"0(0#0#50"/Users/jongwook/Documents/XCode/Pie/Pie_Prefix.pch8676578743001571328#1516"    cd /Users/jongwook/Documents/XCode/Pie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-generated-files.hmap -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-own-target-headers.hmap -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-all-target-headers.hmap -iquote /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-project-headers.hmap -F/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos -I/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/include -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources/armv6 -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources -c /Users/jongwook/Documents/XCode/Pie/Pie_Prefix.pch -o /var/folders/7k/7kzw6LSMHtuAkWwfa9-4nU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-dwawspolaoffaxervnpzwpjvulug/Pie_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/7k/7kzw6LSMHtuAkWwfa9-4nU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-fzyldzvxsohuisftdxppiglotxhf/Pie_Prefix.pch.gch Pie_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+s310969969.983764
+e310969971.815460
+r1
+xProcessPCH
+x/var/folders/7k/7kzw6LSMHtuAkWwfa9-4nU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-fzyldzvxsohuisftdxppiglotxhf/Pie_Prefix.pch.gch
+xPie_Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@25"Precompile Pie_Prefix.pch310969969#310969971#0(0"0(0#0#50"/Users/jongwook/Documents/XCode/Pie/Pie_Prefix.pch8610011328#1516"    cd /Users/jongwook/Documents/XCode/Pie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-generated-files.hmap -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-own-target-headers.hmap -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-all-target-headers.hmap -iquote /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-project-headers.hmap -F/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos -I/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/include -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources/armv7 -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources -c /Users/jongwook/Documents/XCode/Pie/Pie_Prefix.pch -o /var/folders/7k/7kzw6LSMHtuAkWwfa9-4nU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-fzyldzvxsohuisftdxppiglotxhf/Pie_Prefix.pch.gch0#
+
 CProcessPCH++ /var/folders/-X/-XnNqKtMHQu-amOp+qZWV++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-cphwvkijqhesxggncgrtfdjbyefg/Pie_Prefix.pch.gch Pie_Prefix.pch normal armv6 objective-c++ com.apple.compilers.gcc.4_2
 s296518703.764316
 e296518705.598870
@@ -799,6 +1441,32 @@ xobjective-c++
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@25"Precompile Pie_Prefix.pch295259162#295259165#0(0"0(0#0#50"/Users/ilikekjw/Documents/XCode/Pie/Pie_Prefix.pch4300911832#1541"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c++-header -arch armv6 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk -fvisibility=hidden -fvisibility-inlines-hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-generated-files.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-own-target-headers.hmap -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-all-target-headers.hmap -iquote /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-project-headers.hmap -F/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos -I/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/include -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources/armv6 -I/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources -c /Users/ilikekjw/Documents/XCode/Pie/Pie_Prefix.pch -o /var/folders/-X/-XnNqKtMHQu-amOp+qZWV++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-fldbqmmphdmyrohfrffpdwcfvtic/Pie_Prefix.pch.gch0#
 
+CProcessPCH++ /var/folders/7k/7kzw6LSMHtuAkWwfa9-4nU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-bncafubjrtxupiaagsntdaobyigo/Pie_Prefix.pch.gch Pie_Prefix.pch normal armv7 objective-c++ com.apple.compilers.gcc.4_2
+s310969970.378350
+e310969972.036312
+r1
+xProcessPCH++
+x/var/folders/7k/7kzw6LSMHtuAkWwfa9-4nU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-bncafubjrtxupiaagsntdaobyigo/Pie_Prefix.pch.gch
+xPie_Prefix.pch
+xnormal
+xarmv7
+xobjective-c++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@25"Precompile Pie_Prefix.pch310969970#310969972#0(0"0(0#0#50"/Users/jongwook/Documents/XCode/Pie/Pie_Prefix.pch8612992672#1537"    cd /Users/jongwook/Documents/XCode/Pie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c++-header -arch armv7 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -fvisibility-inlines-hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-generated-files.hmap -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-own-target-headers.hmap -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-all-target-headers.hmap -iquote /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-project-headers.hmap -F/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos -I/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/include -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources/armv7 -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources -c /Users/jongwook/Documents/XCode/Pie/Pie_Prefix.pch -o /var/folders/7k/7kzw6LSMHtuAkWwfa9-4nU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-bncafubjrtxupiaagsntdaobyigo/Pie_Prefix.pch.gch0#
+
+CProcessPCH++ /var/folders/7k/7kzw6LSMHtuAkWwfa9-4nU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-ffpshtgquvzjdfgkwxvxdinqqxvf/Pie_Prefix.pch.gch Pie_Prefix.pch normal armv6 objective-c++ com.apple.compilers.gcc.4_2
+s310969969.015426
+e310969970.378236
+r1
+xProcessPCH++
+x/var/folders/7k/7kzw6LSMHtuAkWwfa9-4nU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-ffpshtgquvzjdfgkwxvxdinqqxvf/Pie_Prefix.pch.gch
+xPie_Prefix.pch
+xnormal
+xarmv6
+xobjective-c++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@25"Precompile Pie_Prefix.pch310969969#310969970#0(0"0(0#0#50"/Users/jongwook/Documents/XCode/Pie/Pie_Prefix.pch8612816160#1537"    cd /Users/jongwook/Documents/XCode/Pie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c++-header -arch armv6 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -fvisibility-inlines-hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-generated-files.hmap -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-own-target-headers.hmap -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-all-target-headers.hmap -iquote /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie-project-headers.hmap -F/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos -I/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/include -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources/armv6 -I/Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/DerivedSources -c /Users/jongwook/Documents/XCode/Pie/Pie_Prefix.pch -o /var/folders/7k/7kzw6LSMHtuAkWwfa9-4nU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Pie_Prefix-ffpshtgquvzjdfgkwxvxdinqqxvf/Pie_Prefix.pch.gch0#
+
 CProcessProductPackaging "/Users/ilikekjw/Library/MobileDevice/Provisioning Profiles/1CC82254-D607-40BB-9B75-8BAFCB48F72A.mobileprovision" /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/embedded.mobileprovision
 s295259169.956990
 e295259169.958447
@@ -816,6 +1484,15 @@ xProcessProductPackaging
 x/Users/ilikekjw/Library/MobileDevice/Provisioning Profiles/7F31DB22-AA7C-4FB1-8F00-EF12652661AA.mobileprovision
 x/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/embedded.mobileprovision
 lSLF07#2@191"ProcessProductPackaging "/Users/ilikekjw/Library/MobileDevice/Provisioning Profiles/7F31DB22-AA7C-4FB1-8F00-EF12652661AA.mobileprovision" build/Debug-iphoneos/Pie.app/embedded.mobileprovision296518707#296518707#0(0"0(0#0#89"/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/embedded.mobileprovision4300911832#416"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Users/ilikekjw/Library/MobileDevice/Provisioning Profiles/7F31DB22-AA7C-4FB1-8F00-EF12652661AA.mobileprovision" -o /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/embedded.mobileprovision0#
+
+CProcessProductPackaging "/Users/jongwook/Library/MobileDevice/Provisioning Profiles/D9A733BF-FF36-4F23-87E1-1AEEC163397B.mobileprovision" /Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/embedded.mobileprovision
+s310969974.451594
+e310969974.453497
+r1
+xProcessProductPackaging
+x/Users/jongwook/Library/MobileDevice/Provisioning Profiles/D9A733BF-FF36-4F23-87E1-1AEEC163397B.mobileprovision
+x/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/embedded.mobileprovision
+lSLF07#2@191"ProcessProductPackaging "/Users/jongwook/Library/MobileDevice/Provisioning Profiles/D9A733BF-FF36-4F23-87E1-1AEEC163397B.mobileprovision" build/Debug-iphoneos/Pie.app/embedded.mobileprovision310969974#310969974#0(0"0(0#0#89"/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/embedded.mobileprovision8610388448#416"    cd /Users/jongwook/Documents/XCode/Pie    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Users/jongwook/Library/MobileDevice/Provisioning Profiles/D9A733BF-FF36-4F23-87E1-1AEEC163397B.mobileprovision" -o /Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app/embedded.mobileprovision0#
 
 CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/Entitlements.plist /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie.xcent
 s296518707.881947
@@ -835,6 +1512,9 @@ x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk/Entitle
 x/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie.xcent
 lSLF07#2@165"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk/Entitlements.plist build/Pie.build/Debug-iphoneos/Pie.build/Pie.xcent295322246#295322246#0(0"0(0#0#86"/Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie.xcent4300911832#416"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk/Entitlements.plist -entitlements -format xml -o /Users/ilikekjw/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie.xcent0#
 
+CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist /Users/jongwook/Documents/XCode/Pie/build/Pie.build/Debug-iphoneos/Pie.build/Pie.xcent
+r0
+
 CTouch /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app
 s296533849.468171
 e296533849.470872
@@ -842,4 +1522,12 @@ r1
 xTouch
 x/Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app
 lSLF07#2@70"Touch /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app296533849#296533849#0(0"0(0#0#0"4300911832#254"    cd /Users/ilikekjw/Documents/XCode/Pie    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/ilikekjw/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app0#
+
+CTouch /Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app
+s310969974.453552
+e310969974.458979
+r1
+xTouch
+x/Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app
+lSLF07#2@70"Touch /Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app310969974#310969974#0(0"0(0#0#0"8610298144#254"    cd /Users/jongwook/Documents/XCode/Pie    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/jongwook/Documents/XCode/Pie/build/Debug-iphoneos/Pie.app0#
 

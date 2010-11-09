@@ -1,0 +1,353 @@
+// !$*UTF8*$!
+{
+	1D3623240D0F684500981E51 /* PieAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {736, 428}}";
+			sepNavSelRange = "{495, 0}";
+			sepNavVisRange = "{0, 705}";
+		};
+	};
+	1D3623250D0F684500981E51 /* PieAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {810, 806}}";
+			sepNavSelRange = "{1089, 0}";
+			sepNavVisRange = "{276, 969}";
+		};
+	};
+	1D6058900D05DD3D006BFB54 /* Pie */ = {
+		activeExec = 0;
+		executables = (
+			5159B90D1286570500495C0C /* Pie */,
+		);
+	};
+	28D7ACF60DDB3853001CB0EB /* PieViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {736, 494}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 886}";
+		};
+	};
+	28D7ACF70DDB3853001CB0EB /* PieViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {736, 1976}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 824}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeArchitecturePreference = i386;
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 5159B90D1286570500495C0C /* Pie */;
+		activeSDKPreference = iphoneos4.2;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* Pie */;
+		codeSenseManager = 5159B91C1286574100495C0C /* Code sense */;
+		executables = (
+			5159B90D1286570500495C0C /* Pie */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					558,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 310968924;
+			PBXWorkspaceStateSaveDate = 310968924;
+		};
+		perUserProjectItems = {
+			51184714128902A00090A266 /* PBXTextBookmark */ = 51184714128902A00090A266 /* PBXTextBookmark */;
+			51184715128902A00090A266 /* PBXTextBookmark */ = 51184715128902A00090A266 /* PBXTextBookmark */;
+			51184730128903F70090A266 /* PBXTextBookmark */ = 51184730128903F70090A266 /* PBXTextBookmark */;
+			517212501288A77D00CC5D0A = 517212501288A77D00CC5D0A /* PBXTextBookmark */;
+			517212511288A77D00CC5D0A = 517212511288A77D00CC5D0A /* PBXTextBookmark */;
+			517212551288A77D00CC5D0A = 517212551288A77D00CC5D0A /* PBXTextBookmark */;
+			517212571288A77D00CC5D0A = 517212571288A77D00CC5D0A /* PBXTextBookmark */;
+			517212581288A77D00CC5D0A = 517212581288A77D00CC5D0A /* PBXTextBookmark */;
+			517212591288A77D00CC5D0A = 517212591288A77D00CC5D0A /* PBXTextBookmark */;
+			517214271288BAD600CC5D0A = 517214271288BAD600CC5D0A /* PBXTextBookmark */;
+			517214281288BAD600CC5D0A = 517214281288BAD600CC5D0A /* PBXTextBookmark */;
+			517214291288BAD600CC5D0A = 517214291288BAD600CC5D0A /* PBXTextBookmark */;
+			5172142A1288BAD600CC5D0A = 5172142A1288BAD600CC5D0A /* PBXTextBookmark */;
+			5172142B1288BAD600CC5D0A = 5172142B1288BAD600CC5D0A /* PBXTextBookmark */;
+			5172142C1288BAD600CC5D0A = 5172142C1288BAD600CC5D0A /* PBXTextBookmark */;
+			517214351288BADF00CC5D0A = 517214351288BADF00CC5D0A /* PBXTextBookmark */;
+		};
+		sourceControlManager = 5159B91B1286574100495C0C /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	51184714128902A00090A266 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EADBE2601199327900A6136E /* PieView.m */;
+		name = "PieView.m: 64";
+		rLen = 0;
+		rLoc = 2130;
+		rType = 0;
+		vrLen = 1133;
+		vrLoc = 1041;
+	};
+	51184715128902A00090A266 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EADBE2601199327900A6136E /* PieView.m */;
+		name = "PieView.m: 64";
+		rLen = 0;
+		rLoc = 2130;
+		rType = 0;
+		vrLen = 1133;
+		vrLoc = 1041;
+	};
+	51184730128903F70090A266 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EADBE2601199327900A6136E /* PieView.m */;
+		name = "PieView.m: 64";
+		rLen = 0;
+		rLoc = 2130;
+		rType = 0;
+		vrLen = 1133;
+		vrLoc = 1041;
+	};
+	5159B90D1286570500495C0C /* Pie */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = Pie;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	5159B91B1286574100495C0C /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	5159B91C1286574100495C0C /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	517212501288A77D00CC5D0A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EAC2DA6F11990D8E00FD0E52 /* AsyncSocket.h */;
+		name = "AsyncSocket.h: 10";
+		rLen = 0;
+		rLoc = 257;
+		rType = 0;
+		vrLen = 942;
+		vrLoc = 0;
+	};
+	517212511288A77D00CC5D0A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EAC2DA7011990D8E00FD0E52 /* AsyncSocket.m */;
+		name = "AsyncSocket.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1020;
+		vrLoc = 0;
+	};
+	517212551288A77D00CC5D0A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* PieViewController.m */;
+		name = "PieViewController.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 824;
+		vrLoc = 0;
+	};
+	517212571288A77D00CC5D0A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EAB93CDA1199DF12004EB76F /* PieConnection.mm */;
+		name = "PieConnection.mm: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 828;
+		vrLoc = 3706;
+	};
+	517212581288A77D00CC5D0A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EA0441DD11A0BA3E00FB6072 /* PieConnectView.h */;
+		name = "PieConnectView.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 528;
+		vrLoc = 0;
+	};
+	517212591288A77D00CC5D0A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EA0441DE11A0BA3E00FB6072 /* PieConnectView.m */;
+		name = "PieConnectView.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1006;
+		vrLoc = 200;
+	};
+	517214271288BAD600CC5D0A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EADBE25F1199327900A6136E /* PieView.h */;
+		name = "PieView.h: 27";
+		rLen = 0;
+		rLoc = 492;
+		rType = 0;
+		vrLen = 492;
+		vrLoc = 0;
+	};
+	517214281288BAD600CC5D0A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EAC2D9B21198EE3800FD0E52 /* PieConnection.h */;
+		name = "PieConnection.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 758;
+		vrLoc = 0;
+	};
+	517214291288BAD600CC5D0A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF60DDB3853001CB0EB /* PieViewController.h */;
+		name = "PieViewController.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 886;
+		vrLoc = 0;
+	};
+	5172142A1288BAD600CC5D0A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* PieAppDelegate.h */;
+		name = "PieAppDelegate.h: 24";
+		rLen = 0;
+		rLoc = 495;
+		rType = 0;
+		vrLen = 705;
+		vrLoc = 0;
+	};
+	5172142B1288BAD600CC5D0A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* PieAppDelegate.m */;
+		name = "PieAppDelegate.m: 41";
+		rLen = 0;
+		rLoc = 1089;
+		rType = 0;
+		vrLen = 969;
+		vrLoc = 276;
+	};
+	5172142C1288BAD600CC5D0A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EADBE2601199327900A6136E /* PieView.m */;
+		name = "PieView.m: 19";
+		rLen = 0;
+		rLoc = 262;
+		rType = 0;
+		vrLen = 972;
+		vrLoc = 69;
+	};
+	517214351288BADF00CC5D0A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EADBE2601199327900A6136E /* PieView.m */;
+		name = "PieView.m: 64";
+		rLen = 0;
+		rLoc = 2130;
+		rType = 0;
+		vrLen = 1096;
+		vrLoc = 1078;
+	};
+	EA0441DD11A0BA3E00FB6072 /* PieConnectView.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {736, 428}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 528}";
+		};
+	};
+	EA0441DE11A0BA3E00FB6072 /* PieConnectView.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1356, 598}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{200, 1006}";
+		};
+	};
+	EAB93CDA1199DF12004EB76F /* PieConnection.mm */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {747, 6630}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{3706, 828}";
+		};
+	};
+	EAC2D9B21198EE3800FD0E52 /* PieConnection.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {736, 897}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 758}";
+		};
+	};
+	EAC2DA6F11990D8E00FD0E52 /* AsyncSocket.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {803, 8619}}";
+			sepNavSelRange = "{257, 0}";
+			sepNavVisRange = "{0, 942}";
+		};
+	};
+	EAC2DA7011990D8E00FD0E52 /* AsyncSocket.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {736, 50128}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1020}";
+		};
+	};
+	EADBE25F1199327900A6136E /* PieView.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {736, 428}}";
+			sepNavSelRange = "{492, 0}";
+			sepNavVisRange = "{0, 492}";
+		};
+	};
+	EADBE2601199327900A6136E /* PieView.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {838, 936}}";
+			sepNavSelRange = "{2130, 0}";
+			sepNavVisRange = "{1041, 1133}";
+		};
+	};
+}
