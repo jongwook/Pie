@@ -18,9 +18,10 @@
 	CGColorRef defaultForeground, defaultBackground, cursorColor;
 	CGColorRef colors[8];
 	UILabel *cursor;
+	UILabel *status;
 }
 
 @property (nonatomic,retain) PieConnection *pie;
-@property (nonatomic,retain) IBOutlet UILabel *cursor;
+@property (nonatomic,retain) IBOutlet UILabel *cursor, *status;
 
 @end

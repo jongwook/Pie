@@ -105,7 +105,7 @@ BOOL isCP949(unsigned char a, unsigned char b) {
 }
 
 -(void) onSocket:(AsyncSocket *)sock didReadData:(NSData *)data withTag:(long)tag { 
-	NSLog(@"Received Data length : %d",data.length);
+//	NSLog(@"Received Data length : %d",data.length);
 	buffer.write((const char *)[data bytes],data.length);
 	bufferlen+=data.length;
 	if(bufferlen<0) {
@@ -420,7 +420,7 @@ BOOL isCP949(unsigned char a, unsigned char b) {
 }
 
 -(void) send:(const char *)token length:(int)length {
-	NSLog(@"Sending token length %d",length);
+//	NSLog(@"Sending token length %d",length);
 	//for(int i=0;i<length;i++)
 	//	printf("%02x ",(UInt8)token[i]);
 	//printf("\n");

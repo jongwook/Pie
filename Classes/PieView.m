@@ -8,10 +8,11 @@
 
 #import "PieView.h"
 #import "PieConnection.h"
+#import "PieViewController.h"
 
 @implementation PieView
 
-@synthesize pie, cursor;
+@synthesize pie, cursor, status;
 
 -(void)didMoveToSuperview {
 	
@@ -66,6 +67,26 @@
 	}
 	
 	
+}
+
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+	
+	if(((UITouch *)[touches anyObject]).tapCount == 2)
+    {
+		// double tap
+		
+		// TODO : move this to view controller , check if we still have the connection
+		
+		UITextField *textField=[pie.viewController textField];
+		if([textField isFirstResponder]) {
+			[textField resignFirstResponder];
+		} else {
+			[textField becomeFirstResponder];
+		}
+		
+    }
+    [super touchesEnded:touches withEvent:event];
 }
 
 @end

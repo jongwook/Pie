@@ -26,6 +26,7 @@
 - (void)sendString:(NSString *)str;
 - (void)disconnect;
 - (IBAction)restart;
+- (IBAction)controlChar:(UIButton *)sender;
 
 @property (nonatomic,retain) IBOutlet UIScrollView *scrollView;
 @property (nonatomic,retain) IBOutlet PieView *pieView;

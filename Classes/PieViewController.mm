@@ -7,6 +7,9 @@
 //
 
 #import "PieViewController.h"
+#import "Korean.h"
+
+static Korean korean;
 
 @implementation PieViewController
 
@@ -69,11 +72,22 @@
 		} else {
 			int k=(field.text.length>0)?[field.text characterAtIndex:0]:0x20;
 			if(k!=0x20) {
-				NSLog(@"Korean Input(1) : %C, %04X", k, (int)k);
+				unichar result = korean.add(k);
+				NSLog(@"Korean Input(1) : %C, %04X, %d", k, (int)k, korean.getState());
 				[self sendString:[field.text substringWithRange:NSMakeRange(0, 1)]];
+				
+				if(result) {
+					NSLog(@"Korean input (fin1) : %C, %04X", result, (int)result);
+				}
 			}
 			[field setText:@" "];
 			NSLog(@"Normal Input : %@, %04X", str,c);
+			
+			unichar result = korean.clear();
+			if(result) {
+				NSLog(@"Korean input (fin3) : %C, %04X", result, (int)result);
+			}
+			
 			[self sendKey:c];
 			[koreanLabel setHidden:YES];
 		}
@@ -85,9 +99,16 @@
 //	NSLog(@"Text(%d) : %@",textField.text.length,textField.text);
 	if(textField.text.length>1) {
 		unichar c=[textField.text characterAtIndex:0];
+		unichar c2=[textField.text characterAtIndex:1];
 		if (c!=0x20) {
-			NSLog(@"Korean Input(2) : %C, %04X", c, (int)c);
+			unichar result = korean.add(c);
+			NSLog(@"Korean Input(2) : %C, %04X, %d", c, (int)c, korean.getState());
+			
 			[self sendString:[textField.text substringWithRange:NSMakeRange(0, 1)]];
+			
+			if(result) {
+				NSLog(@"Korean input (fin2) : %C, %04X", result, (int)result);
+			}
 		}
 		[textField setText:[textField.text substringFromIndex:1]];
 	}
@@ -121,6 +142,19 @@
 	[pieView release];
 }
 
+- (IBAction)controlChar:(UIButton *)sender {
+	if([sender.titleLabel.text isEqualToString:@"ESC"]) {
+		[self sendKey:0x1B];	// ESC Key
+		return;
+	}
+	
+	// the control character
+	int key = [sender.titleLabel.text characterAtIndex:1] - '@';
+	NSLog(@"Control Character : %@, %d", sender.titleLabel.text, key);
+	
+	[self sendKey:key];
+}
+
 - (void)sendKey:(int)key {
 	if(key=='\n') {
 		[pie send:"\r\n"];
@@ -139,6 +173,9 @@
 }
 
 - (IBAction)restart{
+	// TODO : if still connected, confirm and close the connection
+	
+	
 	[appDelegate restart];
 }
 

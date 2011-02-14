@@ -1,2 +1,0 @@
-/Users/ilikekjw/Documents/XCode/Pie/Classes/PieViewController.m: In function '-[PieViewController viewDidLoad]':
-/Users/ilikekjw/Documents/XCode/Pie/Classes/PieViewController.m:46: error: request for member 'pieView' in something not a structure or union
