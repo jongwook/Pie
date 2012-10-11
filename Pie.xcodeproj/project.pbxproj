@@ -238,6 +238,7 @@
 				GCC_PREFIX_HEADER = Pie_Prefix.pch;
 				INFOPLIST_FILE = "Pie-Info.plist";
 				PRODUCT_NAME = Pie;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -253,7 +254,7 @@
 				INFOPLIST_FILE = "Pie-Info.plist";
 				PRODUCT_NAME = Pie;
 				PROVISIONING_PROFILE = "553052C3-735A-48AB-908F-407A449253D7";
-				SDKROOT = iphoneos3.0;
+				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
